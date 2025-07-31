@@ -1,0 +1,18 @@
+# Ignore Python virtual environment directories
+venv/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore output directory
+output/
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+
+# Allow everything else
+!/*
