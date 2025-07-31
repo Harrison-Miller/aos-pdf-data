@@ -1,0 +1,996 @@
+{
+  "title": "rules_update.pdf",
+  "filename": "rules_update.pdf",
+  "hash": "97e573434a3ae71e20113db5eb396c60",
+  "publishedDate": "2025-07-15",
+  "extractedDate": "2025-07-31",
+  "type": "faq",
+  "data": [
+    {
+      "title": "CORE RULES",
+      "questions": [],
+      "rules": [
+        {
+          "title": "2.2 DICE",
+          "questions": [
+            {
+              "question": "If an ability allows me to re-roll one dice from an XD6 roll (e.g. the Blades of the Hollow King \u2018Aurelias\u2019 ability), could I then use a different ability to re-roll the entire XD6 roll?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "4.0 WARSCROLLS",
+          "questions": [
+            {
+              "question": "How should I resolve an ability that refers to an enemy\u2019s Control characteristic (e.g. Ushoran\u2019s \u2018Shroudcage Fragment\u2019) if the target does not have a Control characteristic (e.g. a manifestation)?",
+              "answer": "The target is treated as having a Control characteristic of 0\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "5.0 ABILITIES",
+          "questions": [
+            {
+              "question": "Some abilities (e.g. \u2018All-out Attack\u2019) have a red timing bar. Can these abilities only be used in the combat phase?",
+              "answer": "No\ufffd The words in the timing bar or, in the case of reactions and passive abilities, the specific wording of the ability will let you know exactly when you can use it; the colour is just there as a play aid\ufffd If a phase is not specified, the colour indicates the most common phase it is used in or, if it is used in multiple phases equally, the timing bar is black\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Some abilities have a green timing bar. What does this mean?",
+              "answer": "The green timing bar is used to indicate defensive abilities, many of which can be used in multiple phases\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Are non-passive abilities such as \u2018Burning Wyrdflame\u2019 optional to use?",
+              "answer": "Yes\ufffd You must apply the effects of passive abilities and abilities that state that they must be used if it is possible to do so, but all other abilities are optional to use\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "5.1 KEYWORDS",
+          "questions": [
+            {
+              "question": "In \u2018Pick a friendly non-Hero Legion of the First Prince Daemon Infantry or Cavalry unit that has been destroyed to be the target\u2019 (and similar wordings with multiple keywords), does \u2018Cavalry unit\u2019 mean just that (i.e. with no other keywords) or does it mean \u2018friendly non-Hero Legion of the First Prince Daemon Cavalry unit\u2019?",
+              "answer": "It means \u2018friendly non-Hero Legion of the First Prince Daemon Cavalry unit\u2019\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "5.2 USING ABILITIES",
+          "questions": [
+            {
+              "question": "When resolving the effect of an ability that refers to a Save characteristic of 3+ or better (e.g. the \u2018Cloying Quagmire\u2019 spell), what does \u2018or better\u2019 mean?",
+              "answer": "It means any Save characteristic with a lower value than 3+, such as 2+, that better protects against incoming damage\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "5.3 THE RULES OF ONE",
+          "questions": [
+            {
+              "question": "Are reaction abilities subject to the Rules of One? For example, if a unit has a reaction ability on their warscroll, could they only use it once per phase?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "9.1.1 SETTING UP OBJECTIVES AND TERRAIN FEATURES",
+          "questions": [
+            {
+              "question": "If a battleplan instructs you to set up an objective on a corner of the battlefield, should you place the entire 40mm objective marker on the battlefield, or should the centre of the objective marker be on the corner?",
+              "answer": "The centre of the objective marker should be on the corner\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "9.1.2 TERRITORIES",
+          "questions": [
+            {
+              "question": "If a rule requires that a unit be \u2018outside of friendly territory\u2019 or \u2018wholly outside of friendly territory\u2019, would a unit that is not on the battlefield (for example a destroyed unit or a unit in reserve) count?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "10.1 UNIVERSAL DEPLOYMENT PHASE ABILITIES",
+          "questions": [
+            {
+              "question": "Can you choose to deploy units that are in a regiment using the \u2018Deploy Unit\u2019 ability instead of \u2018Deploy Regiment\u2019?",
+              "answer": "Yes\ufffd However, once a unit in a regiment has been deployed in this manner, you can no longer use \u2018Deploy Regiment\u2019 to deploy the remaining units in that regiment, since the declare step of that ability specifies that \u2018No units in that regiment can have already been deployed\ufffd\u2019",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Is it mandatory for players to set up a faction terrain feature (if one is included on their roster) during the deployment phase?",
+              "answer": "No\ufffd A player can choose not to use the \u2018Deploy Faction Terrain\u2019 ability\ufffd However, if both players choose to set up a faction terrain feature, the player who begins deployment must set up their faction terrain features first (as specified in Step 1 of 10\ufffd0)\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "12.0 START OF BATTLE ROUND",
+          "questions": [
+            {
+              "question": "When determining the active player, how do you determine when a player has \u2018finished setting up their army\u2019?",
+              "answer": "A player has finished setting up their army when all units in their army have been deployed\ufffd This means that non-Deploy Deployment Phase abilities (e\ufffdg\ufffd The Masque\u2019s \u2018The Endless Dance\u2019 ability) happen after your army has \u2018finished setting up\u2019\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "14.3 CHARGE PHASE",
+          "questions": [
+            {
+              "question": "When using the \u2018Charge\u2019 ability, does my unit need to end the charge move within \u00bd\" of an enemy unit that was visible to the charging unit at the start of that charge move?",
+              "answer": "No\ufffd It must end the charge move within \u00bd\" of an enemy unit that is visible to the charging unit when it finishes that charge move\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "15.2 MOVING ACROSS TERRAIN",
+          "questions": [
+            {
+              "question": "The rules for moving across terrain state that a model cannot end a move mid-climb. How can you tell if a model is mid-climb?",
+              "answer": "A model is mid-climb if it is not possible to rest it on its base in that location without additional support\ufffd As there is a wide variety of terrain and models, it is acceptable for a model to end a move with its base at a slight angle because of uneven terrain beneath it, but at least half of its base must be within 1\" of the terrain feature that the model is on or it will be considered mid-climb\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "15.4 FLYING",
+          "questions": [
+            {
+              "question": "If an ability that allows a unit to move states that the unit cannot move into combat (e.g. Normal Move), does Fly allow that unit to move across an enemy unit\u2019s combat range?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "16.0 PICKING TARGETS",
+          "questions": [
+            {
+              "question": "When making shooting attacks, can all models in the attacking unit shoot even if the target unit is not visible to some of those models?",
+              "answer": "No, the only models in the attacking unit that can make shooting attacks are those that the target unit is visible to\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "When a unit uses a Shoot ability, does it have to shoot with all of the ranged weapons that it is armed with?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "17.0 THE ATTACK SEQUENCE",
+          "questions": [
+            {
+              "question": "If an ability allows a unit to score critical hits on unmodified rolls of 5+, but that unit needs a 6 to hit (e.g. as a result of subtracting 1 from hit rolls), would unmodified hit rolls of 5 hit the target? If so, would they still trigger any critical hit effects?",
+              "answer": "Although the hits would count as critical hits, the attacks would not score a successful hit\ufffd As the attack sequence ends if an attack fails, effects such as Crit (2 Hits) or Crit (Auto-wound) would have no effect\ufffd However, effects that are resolved immediately, such as Crit (Mortal), would still be triggered by those critical hits\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "18.3 SLAIN MODELS",
+          "questions": [
+            {
+              "question": "Do models removed as a result of a unit being out of coherency count as having been slain?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "19.0 STRIKE-FIRST AND STRIKE-LAST",
+          "questions": [
+            {
+              "question": "Can I use an ability that allows a friendly unit that does not have Strike\u2011first to fight immediately after a friendly unit that has Strike\u2011first if there are one or more enemy units with Strike\u2011first that have not yet been picked to fight?",
+              "answer": "No\ufffd As mentioned in the sidebar next to 19\ufffd0, abilities that allow a unit to use a Fight ability immediately after another unit do not override the Strike-first constraints, so you cannot pick a unit that does not have Strike-first to fight until all other units that have Strike-first have fought\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a friendly unit is the only unit that has Strike\u2011first on the battlefield and it has an ability that allows a friendly unit to fight immediately after it, in what order would units be picked to fight?",
+              "answer": "If you are the active player, the unit that has Strike-first would fight first, then you could use the ability to allow another friendly unit to fight immediately after it, and then you would pick the next unit to fight (i\ufffde\ufffd three friendly units would fight back to back)\ufffd If your opponent is the active player, the unit that has Strike-first would fight first, you could still use the ability to allow another friendly unit to fight, and then your opponent would pick the next unit to fight\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "20.0 WEAPON ABILITIES",
+          "questions": [
+            {
+              "question": "Can I combine multiple instances of the same weapon ability? For example, if a weapon already has Anti\u2011Infantry (+1 Rend) and it can also gain that ability from another source, would it now have +2 Rend against Infantry units?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a weapon has the Companion weapon ability, would it be affected by friendly abilities that grant new weapon abilities or that modify weapon abilities that the weapon already has?",
+              "answer": "No, unless the ability specifically names the weapon or states that it affects Companion weapons\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "21.0 HEALING",
+          "questions": [
+            {
+              "question": "If an ability (e.g. \u2018Seed of Rebirth\u2019) would allow a unit that would be destroyed to negate all remaining damage points then heal to prevent that unit from being destroyed, and another ability (e.g. \u2018Quenching the Flames\u2019) prevents that unit from healing, would that unit still be destroyed?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "24.0 SETTING UP UNITS",
+          "questions": [
+            {
+              "question": "Can a unit use a Move ability and then be affected by an ability which removes them from the battlefield and sets them up again in the same movement phase? For example, could a friendly non-Monster Stormcast Eternals unit move to be wholly within 6\" of a Stormreach Portal, and then in the same movement phase use the \u2018Step Into the Storm\u2019 ability?",
+              "answer": "Yes\ufffd Units cannot use Move abilities in the movement phase after being set up on the battlefield that turn, but are able to use Move abilities before doing so\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "24.2 REPLACEMENT UNITS",
+          "questions": [
+            {
+              "question": "If a destroyed unit had an enhancement, and an ability allows me to set up a replacement of that unit, would the replacement unit also have that enhancement?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If an ability allows a replacement unit to be set up with half the models from the original unit, and the original unit has to have a certain proportion of models equipped with specific weapons, does the new unit also need to adhere to the same restrictions?",
+              "answer": "No\ufffd As stated in 24\ufffd2, you can pick any models from the original unit to be set up in the replacement unit\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If an ability allows a replacement unit to be set up with half the models from the original unit, could I then use an ability such as \u2018Rally\u2019 to return models to that unit until it reached the unit size of the original unit?",
+              "answer": "No\ufffd A replacement unit is treated as a new unit with a new unit size\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "25.0 GUARDED HEROES",
+          "questions": [
+            {
+              "question": "If an ability allows me to ignore the effects of the \u2018Guarded Hero\u2019 ability when picking targets (e.g. the Warlock Engineer\u2019s \u2018Sniper- master\u2019 ability), would the attacking unit still be affected by the -1 to hit penalty from \u2018Guarded Hero\u2019?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "28.0 ADVANCED ABILITY RULES",
+          "questions": [
+            {
+              "question": "If a rule says to pick a number of units with one keyword or another (e.g. \u2018Pick up to 3 friendly Skink Infantry or Cavalry units\u2019), could you pick a combination of units with either keyword, or do all the units you pick need to have the same keyword?",
+              "answer": "You can mix and match\ufffd In the example given, you could pick 1 Skink Infantry unit and 2 Skink Cavalry units\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a persisting effect applies to a unit that is destroyed, and another ability allows that unit to return to the battlefield (e.g. the \u2018Resurrection\u2019 prayer from the Path to Glory: Ascension battlepack), does the persisting effect apply to the returned unit?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a part of an ability\u2019s effect does not state that you \u2018can\u2019 or \u2018must\u2019 do it, is it mandatory to resolve that part of the effect?",
+              "answer": "Yes\ufffd Any part of an effect that is not optional is mandatory\ufffd If you cannot resolve one part of an effect, none of it applies\ufffd For instance, if a player picked the Wizard casting \u2018The Hand of Gork\u2019 to also be the target of the spell, the effect could not be fully resolved \u2013 it would be impossible for the target to be removed from the battlefield and set up again wholly within 24\" of the caster \u2013 and so the spell would have no effect\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ADVANCED RULES",
+      "questions": [
+        {
+          "question": "If an ability that is not on a unit\u2019s warscroll has the \u2018Once Per Turn\u2019, \u2018Once Per Battle\u2019 or \u2018Once Per Battle Round\u2019 timing (without \u2018(Army)\u2019 afterwards), can multiple friendly units use that ability in that time period?",
+          "answer": "It depends on who is using the ability (see the sidebar next to 28\ufffd2)\ufffd If a unit is using the ability (i\ufffde\ufffd the declare step specifically says to pick a unit to use it), then each unit could use that ability in that time period\ufffd If the player is using the ability (i\ufffde\ufffd nothing in the ability specifically says that it is used by a unit), it can only be used once in that time period\ufffd Note that picking the target of an ability is not the same as picking a unit to use that ability\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": [
+        {
+          "title": "COMMANDS, 3.0 MOVEMENT PHASE COMMANDS",
+          "questions": [
+            {
+              "question": "If an ability modifies a run roll, does that ability modify the roll made in the \u2018Redeploy\u2019 ability, since \u2018Redeploy\u2019 has the Run keyword?",
+              "answer": "No, named rolls such as run roll are only modified by abilities that specifically call out that type of roll\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "COMMANDS, 4.0 SHOOTING PHASE COMMANDS",
+          "questions": [
+            {
+              "question": "If a friendly unit is in combat and is armed with a weapon that has Shoot in Combat, can it use the \u2018Covering Fire\u2019 command?",
+              "answer": "No, you can only pick units that are not in combat to use that ability\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a unit cannot be picked to be the target of shooting attacks (e.g. an Infantry Hero affected by the \u2018Guarded Hero\u2019 ability) but is the closest unit to a friendly unit using the \u2018Covering Fire\u2019 command, do I still have to target that unit?",
+              "answer": "No, you must pick the nearest eligible unit that can be picked to be the target of shooting attacks\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "COMMANDS, 8.0 END OF TURN COMMANDS",
+          "questions": [
+            {
+              "question": "When using the \u2018Power Through\u2019 command, can my models pass through enemy models in the target unit or only through the target unit\u2019s combat range?",
+              "answer": "Your models can only pass through the target unit\u2019s combat range, unless your unit has Fly or is otherwise allowed to pass through models\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can faction terrain or manifestations be picked as the target for \u2018Power Through\u2019?",
+              "answer": "Yes, if it has a Move characteristic greater than \u2018-\u2019\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "TERRAIN, 1.1 WHOLLY ON AND BEHIND TERRAIN",
+          "questions": [
+            {
+              "question": "When checking if a unit is behind a terrain feature, do I need to draw a line from the attacking model\u2019s base to the target\u2019s base or from any point on the attacking model to any point on the target?",
+              "answer": "From any point to any point\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If one part of a unit is behind one terrain feature that has the \u2018Cover\u2019 ability, another part of that unit is behind a second terrain feature that has the \u2018Cover\u2019 ability, and it is not possible to draw a line to a model in that unit without that line passing across one of those terrain features, would that unit be affected by the \u2018Cover\u2019 ability?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If some but not all of the models in a unit making a shooting attack are within 3\" of the outer edge of a terrain feature that has the \u2018Cover\u2019 ability, and it is impossible to draw a line from the attacking unit to the target unit without that line passing across the terrain feature, would the target count as being behind that terrain feature and thus be affected by the \u2018Cover\u2019 ability?",
+              "answer": "No\ufffd Since you ignore parts of a terrain feature within the attacking unit\u2019s combat range when determining if the target is behind that terrain feature, you would be able to draw a line from a model in the attacking unit to a model in the target unit that only passed across the parts of the terrain feature being ignored\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "TERRAIN, 1.5 FACTION TERRAIN",
+          "questions": [
+            {
+              "question": "Are faction terrain features still subject to the restrictions in Core Rules, 5.3 The Rules of One?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If an ability requires you to set up a unit more than 9\" from all enemy units, could you set up a unit within 9\" of a faction terrain feature?",
+              "answer": "Yes\ufffd However, some faction terrain features (such as the Shrine Luminor) allow a unit to be placed on them\ufffd Since, in these cases, you measure range and visibility to and from the terrain feature instead of the unit, you would not be able to set up a unit within 9\" of a faction terrain feature that has a unit on it\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Are faction terrain features affected by friendly abilities (e.g. those that give units the Ward keyword)?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can faction terrain features use command abilities?",
+              "answer": "No, unless that command is on the faction terrain feature\u2019s warscroll\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a faction terrain feature is closer to a friendly unit using the \u2018Covering Fire\u2019 command than any other units, do I have to target that faction terrain feature? Can I choose to?",
+              "answer": "No to both\ufffd However, some faction terrain features (such as the Shrine Luminor) allow a unit to be placed on them\ufffd Since, in these cases, you measure range and visibility to and from the terrain feature instead of the unit, you would have to target that terrain feature if it was closest\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If an ability or battle tactic requires a unit to be destroyed (e.g. \u2018The Blood Tithe\u2019), does destroying a faction terrain feature count?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can a unit placed on a faction terrain feature be picked as the target of enemy abilities (as opposed to the target of attacks)? For example, if I were to pick a Shrine Luminor as the target of the Realmshaper Engine\u2019s \u2018Power Unleashed\u2019 ability, could I pick the hero placed on the Shrine Luminor as a target of that ability?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Do I need to use a Retreat ability to move away from a faction terrain feature that has a Move characteristic of 0\"?",
+              "answer": "No, you can use any Move ability\ufffd However, some faction terrain features (such as the Shrine Luminor) allow a unit to be placed on them\ufffd Since, in these cases, you measure range and visibility to and from the terrain feature instead of the unit, you would have to use a Retreat ability to move away from a terrain feature that has a unit on it\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "MAGIC, 1.1 POWER LEVEL",
+          "questions": [
+            {
+              "question": "Can units in my army use the example spell (\u2018Mystic Shield\u2019) and example prayer (\u2018Resurrection\u2019) from the sidebar?",
+              "answer": "These examples are from the Path to Glory: Ascension battlepack, so they can be used by players using that battlepack (if they gain the appropriate Path rank)\ufffd They are not used in other battlepacks unless explicitly stated\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "MAGIC, 1.1 POWER LEVEL",
+          "questions": [
+            {
+              "question": "If a unit has multiple power levels (e.g. a Hero that is both a Wizard and a Priest), and another ability modifies that unit\u2019s power level (e.g. the \u2018Witchbane Curse\u2019 prayer), which power level does it modify?",
+              "answer": "If that ability only targets Wizards or only targets Priests, it modifies the corresponding power level\ufffd If it could target either or does not specify the target, it modifies both\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a unit has more than one power level (e.g. a Wizard that is also a Priest) and an enemy ability references that unit\u2019s power level, which power level should I use?",
+              "answer": "Use whichever power level is higher\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "MAGIC, 2.0 SPELLS",
+          "questions": [
+            {
+              "question": "Is mortal damage inflicted by a miscast considered to be \u2018mortal damage inflicted by a Spell ability\u2019 for the purposes of abilities like the Tzeentch effect of the \u2018Marks of Chaos\u2019 ability?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "MAGIC, 7.0 MANIFESTATIONS",
+          "questions": [
+            {
+              "question": "Are manifestations still subject to the restrictions in Core Rules, 5.3 The Rules of One?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If an ability requires you to set up a unit more than 9\" from all enemy units, does a manifestation count as an enemy unit?",
+              "answer": "If the manifestation has a Move characteristic of 0\" (\u2018-\u2019), it is only treated as a unit in the combat phase, so it only counts as an enemy unit if you are setting up a unit in that phase\ufffd If the manifestation has a Move characteristic of greater than 0\", it counts as an enemy unit for the purpose of setting up other units in any phase\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Are manifestations affected by friendly abilities that would normally affect units (e.g. those that give units the Ward keyword)?",
+              "answer": "No, except for those permitted in Magic, 7\ufffd0, and those that specifically affect manifestations (such as \u2018Banish Manifestation\u2019)\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can manifestations use command abilities?",
+              "answer": "No, unless that command is on the manifestation\u2019s warscroll\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a manifestation is closer to a friendly unit using the \u2018Covering Fire\u2019 command than any other units, do I have to target that manifestation? Can I choose to?",
+              "answer": "No to both\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If an ability or battle tactic requires a unit to be destroyed (e.g. \u2018The Blood Tithe\u2019), does destroying a manifestation count?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Do I need to use a Retreat ability to move away from a manifestation that has a Move characteristic of 0\"?",
+              "answer": "No, you can use any Move ability\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a manifestation has a Move characteristic that is greater than 0\", can it use Move abilities in the movement phase of the same turn in which it was set up?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can a friendly manifestation that has a Move characteristic of greater than 0\" be set up within 9\" of an enemy manifestation that has a Move characteristic of greater than 0\"?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a power level 2 or higher wizard miscasts their first spell, could they still use the \u2018Banish Manifestation\u2019 ability in that phase?",
+              "answer": "Yes\ufffd Miscasting only prevents that wizard from using any more spells in that phase\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a manifestation has multiple parts (e.g. Geminids of Uhl-Gysh) and is in combat, can one part of the manifestation be \u2018in combat\u2019 while the other is not? If one part is in combat can the other part make a pile-in move?",
+              "answer": "If any part of a manifestation is considered to be in combat, the entire manifestation is considered to be in combat\ufffd If one part can pile in, all parts can pile in (but must all pile in towards the same enemy unit as per the rules for piling in)\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "ARMY COMPOSITION, 2.2 ARMIES OF RENOWN",
+          "questions": [
+            {
+              "question": "When using an Army of Renown, can I pick a faction terrain feature to include on my roster?",
+              "answer": "Yes, unless that Army of Renown\u2019s rules specifically state that you cannot include a faction terrain feature\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "ARMY COMPOSITION, 3.1 REGIMENTS",
+          "questions": [
+            {
+              "question": "If a Hero is able to join another Hero\u2019s regiment (e.g. The Shadow Queen joining Morathi-Khaine or an Assassin joining a Dreadlord on Black Dragon), do they take the place of a non-Hero unit in that regiment?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can I add units from other factions to my Heroes\u2019 regiments?",
+              "answer": "No\ufffd The only way to add units from other factions to your army is by taking an eligible Regiment of Renown\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a Hero\u2019s regiment options contain multiple excluded keywords (e.g. non-Beast non-Monster), can it include units in its regiment that have only one of those keywords?",
+              "answer": "No, it cannot include units with any of those keywords\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can my army include a Warmaster (e.g. Sigvald, Prince of Slaanesh) in another hero\u2019s regiment?",
+              "answer": "Yes, but only if your army includes another Warmaster unit, since your general must lead a regiment, and you must pick a Warmaster as your general if there are any Warmaster units in your army\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "ARMY COMPOSITION, 3.5 REGIMENTS OF RENOWN",
+          "questions": [
+            {
+              "question": "If a Regiment of Renown includes a wizard, could that wizard cast spells from a universal manifestation lore that was picked for that army?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a Regiment of Renown (e.g. the Coven of Thryx) includes one or more manifestations, do those manifestations replace picking a manifestation lore for my army?",
+              "answer": "No, they are in addition\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Does a Regiment of Renown require a Hero to lead it?",
+              "answer": "No\ufffd As stated in 3\ufffd5, Regiments of Renown are pre-built regiments, so they only include the units stated in their unit summary/organisation section\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SPEARHEAD: FIRE AND JADE",
+      "questions": [
+        {
+          "question": "If a battle tactic requires a unit not to be in combat at the end of your turn (e.g. \u2018Seize the Centre\u2019), can I still complete that tactic if my unit is within 3\" of a manifestation or faction terrain feature?",
+          "answer": "Manifestations that have a Move characteristic of 0\" (\u2018-\u2019) and faction terrain features only count as being in combat in the combat phase, so if you were within 3\" of any of those at the end of your turn (and more than 3\" from all other units), you would not be in combat and could complete the battle tactic\ufffd If, however, you were within 3\" of a manifestation that had a Move characteristic of greater than 0\" or a faction terrain feature that had a unit on it, you would be in combat at the end of your turn and could not complete the battle tactic\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "title": "GENERAL\u2019S HANDBOOK 2025-26",
+      "questions": [
+        {
+          "question": "If a rule requires more friendly models than enemy models to be contesting battle tactic \u2018Hold Ground\u2019), should I use the control scores of my units",
+          "answer": "Yes\ufffd In these cases, the rule should be treated in the same way as determining a terrain feature (e.g. the Ghyran twist \u2018Take the Land\u2019 or the contesting that terrain feature? control of a terrain feature (Core Rules, 32\ufffd3)\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can I complete the same battle tactic multiple times in a battle?",
+          "answer": "No, unless specified otherwise\ufffd NEW",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": [
+        {
+          "title": "COMMANDS, 3.0 MOVEMENT PHASE COMMANDS",
+          "questions": [
+            {
+              "question": "If a unit uses \u2018All-out Attack\u2019 in the shooting phase and the combat phase, do I subtract 2 from save rolls for that unit?",
+              "answer": "No\ufffd Persisting effects (see 28\ufffd1) count as the effects of passive abilities for their duration, so units cannot be affected by the same persisting effect more than once\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "1.5 FACTION TERRAIN",
+          "questions": [
+            {
+              "question": "If a hero is garrisoning a faction terrain feature, can it still be picked as the target of abilities other than attacks?",
+              "answer": "Yes\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "FACTION PACKS",
+      "questions": [
+        {
+          "question": "Can I use Scourge of Ghyran enhancements, lores and battle formations in an Army of Renown?",
+          "answer": "No\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": [
+        {
+          "title": "BLADES OF KHORNE",
+          "questions": [
+            {
+              "question": "If I use \u2018Slaughter Triumphant\u2019 to set up a replacement Bloodthirster, and the unit I am replacing had one or more enhancements, does the replacement unit retain those enhancements?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "DAUGHTERS OF KHAINE",
+          "questions": [
+            {
+              "question": "Can I use the \u2018All-out Slaughter\u2019 ability once per battle with each eligible unit?",
+              "answer": "Yes\ufffd This ability is used by the unit, not the player, and it does not have the \u2018Once Per Battle (Army)\u2019 timing, so each eligible unit can use it once per battle\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can a Sisters of Slaughter with Sacrificial Knives unit use the \u2018Dance of Death\u2019 ability to move out of combat?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "FLESH-EATER COURTS",
+          "questions": [
+            {
+              "question": "Can I use the \u2018Muster Guard\u2019 ability, spend 0 noble deeds points to return 0 models to a unit, then use the \u2018Raise the Banners\u2019 ability to return an additional model to that unit?",
+              "answer": "No\ufffd The word \u2018any\u2019 means \u20181 or more\u2019\ufffd Therefore, you would have to spend 1 or more noble deeds points to resolve the effect of \u2018Muster Guard\u2019, and an ability would have to have returned 1 or more slain models to a unit for the effect of \u2018Raise the Banners\u2019 to apply\ufffd In the case above, neither has happened\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "When the target of \u2018Glimpse of Delusion\u2019 makes combat attacks as a result of the effect of that spell, can the \u2018All-out Attack\u2019 command or the \u2018All-out Defence\u2019 command be used as reactions to those attacks?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "GLOOMSPITE GITZ",
+          "questions": [
+            {
+              "question": "Does the \u2018Bouncing Fury\u2019 ability have any effect on Companion weapons?",
+              "answer": "Yes, because this ability specifically names which weapons are affected\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "HEDONITES OF SLAANESH",
+          "questions": [
+            {
+              "question": "When using the \u2018Joyous Battle Fury\u2019 ability, does Dexcessa need to have slain any models in a turn in order to add 1 to the Attacks characteristic of their Impaling Talons for each battle fury token they have?",
+              "answer": "No\ufffd Battle fury tokens are gained (and Dexcessa can heal) on any turn in which Dexcessa slew any enemy models, but can gain the additional attacks on any turn that they have any battle fury tokens\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "The effect of the Scourge of Ghyran \u2018Master of Temptation\u2019 heroic trait states that units can only use Core abilities. How does this affect passive abilities?",
+              "answer": "It doesn\u2019t\ufffd Passive abilities are not \u2018used\u2019, so this ability doesn\u2019t have any effect on them\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "KHARADRON OVERLORDS",
+          "questions": [
+            {
+              "question": "Can an Arkanaut Frigate use the \u2018Assault Boat\u2019 ability if it used a Run ability in the same turn but was picked as a target of Brokk Grungsson\u2019s \u2018Command the Fleet\u2019 ability earlier in the same turn?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can I use the \u2018Assault Boat\u2019 ability in combination with \u2018Counter-charge\u2019?",
+              "answer": "Yes\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "LUMINETH REALM-LORDS",
+          "questions": [
+            {
+              "question": "If my battle formation allows me to use a Facet of War ability in addition to the one I pick each battle round, can I pick the same Facet of War ability in order to use it twice that battle round?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "If a Scinari Calligrave miscasts a spell when attempting to summon a manifestation, can they use their \u2018Realmscribe\u2019 ability to avoid the miscast?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "When Ellania and Ellathor use the \u2018Total Eclipse\u2019 ability, does your opponent need to spend an additional command point for the first command used by any unit or for the first command used by each unit?",
+              "answer": "The first command used by any unit\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "Can models end a move in the open spaces underneath a Shrine Luminor?",
+              "answer": "Yes\ufffd However, if the Shrine Luminor has a Shrine Guardian, an enemy unit would need to use an ability that would allow them to move into combat with the Shrine Luminor to do so, such as the \u2018Charge\u2019 ability\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "MAGGOTKIN OF NURGLE",
+          "questions": [
+            {
+              "question": "Does the \u2018Disease and Pestilence Personified\u2019 ability require at least one mortal damage to be inflicted by the \u2018Wracked with Disease\u2019 ability in order for it to inflict 1 additional mortal damage?",
+              "answer": "Yes, as indicated by \u2018add 1 to the amount of mortal damage inflicted, if any\u2019\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "NIGHTHAUNT",
+          "questions": [
+            {
+              "question": "When using the \u2018Wave of Terror\u2019 ability, can all friendly Nighthaunt units that are in combat use Charge abilities or only one?",
+              "answer": "All of them (the ability affects \u2018friendly Nighthaunt units\u2019)\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "OGOR MAWTRIBES",
+          "questions": [
+            {
+              "question": "Does the \u2018Great Gutlord\u2019 heroic trait ignore negative modifiers to hit rolls and wound rolls for attacks made with Companion weapons?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            },
+            {
+              "question": "\u2018Trampling Charge\u2019 allows Monsters to add 2 to a D3 roll. How does this work?",
+              "answer": "If a rule requires you to roll a D3, roll a dice and halve the total, rounding up\ufffd For example, if the Ogor Mawtribes player rolled a 5 on a regular 6-sided dice, that would result in a D3 roll of 3\ufffd Then, if the charging unit was a Monster, you would add 2 to the roll, and the charging Monster would inflict 5 mortal damage\ufffd Note this means that Monsters will always inflict some amount of damage when picked as a target of the \u2018Trampling Charge\u2019 ability, as their roll will never be less than a 2\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "OSSIARCH BONEREAPERS",
+          "questions": [
+            {
+              "question": "At the 2+ stage of the effect of \u2018Curse of Years\u2019, if I roll 1 or more 2+\u2019s, can I keep rolling extra dice (and inflicting mortal damage on the target) until a 1 is rolled?",
+              "answer": "No\ufffd",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OTHER DIGITAL DOWNLOADS",
+      "questions": [
+        {
+          "question": "When placing scenery pieces while setting up an Awakened Wyldwood, can the ends of each base overlap?",
+          "answer": "No\ufffd The tips at the end of each base must touch without overlapping part of the base of a different scenery piece\ufffd SCOURGE OF GHYRAN NEW",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": [
+        {
+          "title": "IRONJAWZ, BATTLE FORMATIONS",
+          "questions": [
+            {
+              "question": "When using the \u2018Mightiest Destroyers\u2019 ability, can I pick a second target if there is a Megaboss on Maw-Krusha on the battlefield?",
+              "answer": "No\ufffd The ability specifies the unit name, so only a Megaboss unit is eligible\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "DISCIPLES OF TZEENTCH, BATTLE FORMATIONS",
+          "questions": [
+            {
+              "question": "Can the target of \u2018Sorcerers of War\u2019 attempt to cast a spell in the combat phase if that wizard already attempted to cast in the hero phase of the same turn?",
+              "answer": "Yes\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "SKAVEN, GREY SEER ON SCREAMING BELL",
+          "questions": [
+            {
+              "question": "If I successfully cast \u2018Gnaw Through Reality\u2019 on a Scourge of Ghyran Grey Seer on Screaming Bell, could I then use \u2018Tunnels Through Reality\u2019 to remove that unit and set it up wholly within 6\" of another friendly Gnawhole?",
+              "answer": "No\ufffd \u2018Gnaw Through Reality\u2019 does not allow the Grey Seer on Screaming Bell to use abilities from the Gnawhole warscroll, only to be treated as a Gnawhole when using those abilities\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "KRULEBOYZ, KILLABOSS ON GREAT GNASHTOOF",
+          "questions": [
+            {
+              "question": "Can I use the \u2018Drag \u2019Em Out\u2019 ability to remove an enemy Infantry Hero from garrisoning a faction terrain feature?",
+              "answer": "Yes\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        },
+        {
+          "title": "FYRESLAYERS, AURIC RUNESON ON MAGMADROTH",
+          "questions": [
+            {
+              "question": "Can more than one Scourge of Ghyran Auric Runeson on Magmadroth pick the same Auric Runefather on Magmadroth as the target of their \u2018Fire, Blood and Vengeance\u2019?",
+              "answer": "Yes\ufffd That Runefather had a big family\ufffd NEW",
+              "updatedOn": "2025-07-31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BATTLETOME: GLOOMSPITE GITZ",
+      "questions": [
+        {
+          "question": "When using \u2018Shadowstep\u2019, if my chanting roll was 8+, could I pick the priest themselves as the first target, move them, then pick a another eligible unit that is now within range as the second target\u2019?",
+          "answer": "Yes\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "When using the Lunar Squigs effect of \u2018Under the Light of the Bad Moon\u2019 or the \u2018The Moon and the Loon\u2019 ability to use a value of 4 for the Move characteristic of a friendly Squig unit, does the 4 replace the entire Move characteristic of the unit with a 4, or just the dice roll?",
+          "answer": "It replaces the dice roll\ufffd For example, if a unit of Squig Hoppers (with a Move characteristic of D6+8\") were affected by one of these abilities, it could use a value of 4 instead of rolling the D6, resulting in a Move characteristic of 12\" (4+8\")\ufffd NEW",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "title": "BATTLETOME: ORRUK WARCLANS",
+      "questions": [
+        {
+          "question": "Can the attacker choose to resolve their attacks one at a time for the Doom Diver Catapult? If so, how does the Rend reduction apply?",
+          "answer": "Yes\ufffd As described in the rules for the attack sequence (17\ufffd0), attacks are resolved one at a time unless you choose to use fast dice rolling\ufffd Here\u2019s an example attack sequence for the Doom Diver Catapult: 1\ufffd The Gloomspite Gitz player successfully hits and wounds for the first attack, then their opponent makes a save roll, subtracting the Rend (3) of the weapon from the roll\ufffd 2\ufffd The Gloomspite Gitz player fails the hit roll for the second attack, re-rolls it to be successful and successfully wounds\ufffd Then, their opponent makes a save roll subtracting the now-reduced Rend (2) from the roll\ufffd 3\ufffd The third attack fails to hit and fails again after the re-roll\ufffd The Rend is now reduced to 1\ufffd 4\ufffd The fourth attacks successfully hits and wounds\ufffd The opponent of the Gloomspite Gitz player subtracts the Rend (1) from their save roll\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "When using the \u2018Notorious Bosses\u2019 ability, can I give a target a heroic trait that another unit already has?",
+          "answer": "No\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can each part of the Foot of Gork use the \u2018Wandering Destruction\u2019 ability each turn?",
+          "answer": "No\ufffd This is a single manifestation with multiple parts, so it can only use that ability once in each turn\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "In the \u2018Ironjawz Bigmob\u2019 Spearhead army, are the Brute Ragerz set up during the deployment phase?",
+          "answer": "Yes\ufffd Only the Brutes are not set up on the battlefield during the deployment phase\ufffd The Brute Ragerz are a different unit type, so are set up normally\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "title": "BATTLETOME: SKAVEN",
+      "questions": [
+        {
+          "question": "The prayer \u2018Get \u2019Em, Gork!\u2019 allows a terrain feature to become trampled by Gork. If an enemy unit starts and ends a move within 6\" of that terrain feature, would you roll for damage twice? If it ended a move within 6\" of two different terrain features that were trampled by Gork, would you roll for damage for each such terrain feature?",
+          "answer": "Yes to both questions\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "If I pick a friendly Stormfiends unit as the target of the \u2018Filth-crust\u2019 prayer with a chanting roll of 8+, how would the Crit (Mortal) weapon ability interact with the \u2018Shock Gauntlets\u2019 ability?",
+          "answer": "The Crit (Mortal) weapon ability would inflict mortal damage on the target unit equal to the Damage characteristic and the attack sequence would end, so \u2018Shock Gauntlets\u2019 would have no further effect\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "If an enemy unit is affected by the \u2018Gaze of the Gnaw\u2019 ability and must attack Vizzik Skour, can the models in that unit that are not within Vizzik Skour\u2019s combat range after piling in attack?",
+          "answer": "No\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "If a Warp-Grinder picks another Warp-Grinder unit to be set up in the tunnels below using the \u2018Tunnel Skulkers\u2019 ability, can both of those units use the \u2018Warp-Ambush\u2019 ability to attempt to set up the units on the battlefield?",
+          "answer": "Yes\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "When using the Grey Seer\u2019s \u2018Warpstone Shards\u2019 ability, if the 3D6 casting roll includes 2 or more rolls of 1 (before removing one of the dice), is that spell miscast?",
+          "answer": "Yes\ufffd NEW",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "title": "BATTLETOME: SLAVES TO DARKNESS",
+      "questions": [
+        {
+          "question": "If a flying unit passes across a Gnawhole, does it ignore the effect of the \u2018Volatile Ground\u2019 ability since the \u2018Fly\u2019 ability means that units ignore terrain features while moving?",
+          "answer": "No\ufffd The unit still counts as having passed across the Gnawhole, so the effect applies\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "When using the \u2018Dark Apotheosis\u2019 ability to set up a Daemon Prince, does that Daemon Prince have to be included on my army roster and do I need to spend points on it?",
+          "answer": "No to both\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "If Archaon the Everchosen uses the \u2018Eye of Sheerian\u2019 ability and, as a result, the Slaves to Darkness player has to take the first turn in a battle round after taking the second turn in the previous battle round (i.e., they end up taking a \u2018double turn\u2019), does the Slaves to Darkness player suffer the penalties for taking a \u2018double turn\u2019, for instance not being able to pick a battle tactic or their opponent counting as the underdog for the rest of the battle?",
+          "answer": "No\ufffd The penalties for taking a double turn only apply if you \u2018chose\u2019 to go first in the current battle round\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can a unit use the \u2018Pledge to Chaos\u2019 ability while it is not on the battlefield, e.g. if it is set up in reserve in a Silver Tower?",
+          "answer": "No\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can a Gaunt Summoner use the \u2018Minions of the Silver Tower\u2019 ability more than once to set up multiple units in a Silver Tower?",
+          "answer": "No, as stated in Core Rules, 5\ufffd3\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can I include more than 1 Ensorcelled Banner in my Slaves to Darkness army?",
+          "answer": "No\ufffd Ensorcelled Banners are enhancements, and as stated in Army Composition, 4\ufffd1, you can only take 1 enhancement from each enhancement table in your faction rules\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can Regiments of Renown be included in a Legion of the First Prince army?",
+          "answer": "Yes\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "title": "BATTLETOME: STORMCAST ETERNALS",
+      "questions": [
+        {
+          "question": "Can a Daemon Prince from the Godmarked Ascendant Regiment of Renown be given enhancements?",
+          "answer": "Yes\ufffd In Army Composition 3\ufffd5 it states that a unit cannot use faction rules (including enhancements) unless they have a keyword that matches up with the faction\u2019s name\ufffd Since the Godmarked Ascendant Regiment of Renown adds such a keyword, that unit is eligible to be given enhancements\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can I use the \u2018Ruination Chamber\u2019 ability to react to enemy abilities that target a friendly unit with that ability if that ability takes place outside of the regular turn sequence (e.g. a Deployment Phase ability)?",
+          "answer": "Yes\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    },
+    {
+      "title": "PATH TO GLORY: RAVAGED COAST",
+      "questions": [
+        {
+          "question": "If I use the \u2018Ruination Chamber\u2019 ability to react to an ability that targets multiple units and/or has multiple effects (e.g. \u2018Power Through\u2019), and the roll is successful, should my opponent still resolve the parts of the ability that affect other units?",
+          "answer": "Yes\ufffd The \u2018Ruination Chamber\u2019 ability only allows you to ignore the effect of that ability on that unit; it does not stop the effect from being resolved for other units\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "When building my Path to Glory roster, I can include regiments with units from different factions that are from the same grand alliance as my general. When I do so, can I use the battle traits or enhancements from that other faction?",
+          "answer": "No, you can only use battle traits and enhancements from the faction that you picked for your Path to Glory army or from the universal enhancements included in Path to Glory: Ravaged Coast\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can I add spells or prayers from a manifestation lore to my Arcane Tome when first creating my army roster?",
+          "answer": "No\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Can I add spells from one of the universal manifestation lores (such as Forbidden Power) to my Arcane Tome?",
+          "answer": "Yes\ufffd",
+          "updatedOn": "2025-07-31"
+        },
+        {
+          "question": "Do battle formations, enhancements and lores cost points?",
+          "answer": "No\ufffd",
+          "updatedOn": "2025-07-31"
+        }
+      ],
+      "rules": []
+    }
+  ]
+}

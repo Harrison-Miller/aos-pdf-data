@@ -1,25 +1,23 @@
 import argparse
 import os
+from extractor import process_pdfs, extract_and_save
 import pdfplumber
-from extractor import process_pdfs, save_to_json
-from extractors.faq_extractor import extract_faq_data
-from extractors.rules_extractor import extract_rules_data
-from extractors.battle_profile_extractor import extract_battle_profile_data
-
-PDF_DIR = "pdfs"
-OUTPUT_DIR = "output"
+from extractors.faq_extractor import FAQExtractor
+import json
 
 def main():
     parser = argparse.ArgumentParser(description="Run the PDF scraper and extractor.")
     parser.add_argument("--scrape", action="store_true", help="Run the scraper to fetch PDFs from the website.")
     parser.add_argument("--extract", type=str, help="Run the extractor on a specified local PDF file.")
+    parser.add_argument("--pdf-dir", type=str, default="pdfs", help="Directory containing PDFs to process.")
+    parser.add_argument("--output-dir", type=str, default="output", help="Directory to save extracted JSON files.")
 
     args = parser.parse_args()
 
     if args.scrape:
         from scraper import scrape_pdfs
         scrape_pdfs()
-        process_pdfs()
+        process_pdfs(args.pdf_dir, args.output_dir)
 
     if args.extract:
         pdf_path = args.extract
@@ -28,14 +26,34 @@ def main():
             return
 
         print(f"Processing {pdf_path}...")
-        with pdfplumber.open(pdf_path) as pdf:
-            faq_data = extract_faq_data(pdf)
-            rules_data = extract_rules_data(pdf)
-            battle_profile_data = extract_battle_profile_data(pdf)
+        extract_and_save(pdf_path, args.output_dir)
 
-        save_to_json(faq_data, os.path.join(OUTPUT_DIR, "faq.json"))
-        save_to_json(rules_data, os.path.join(OUTPUT_DIR, "rules.json"))
-        save_to_json(battle_profile_data, os.path.join(OUTPUT_DIR, "battleprofile.json"))
+def test_pdf_reading():
+    parser = argparse.ArgumentParser(description="Run the PDF scraper and extractor.")
+    parser.add_argument("--scrape", action="store_true", help="Run the scraper to fetch PDFs from the website.")
+    parser.add_argument("--extract", type=str, help="Run the extractor on a specified local PDF file.")
+    parser.add_argument("--pdf-dir", type=str, default="pdfs", help="Directory containing PDFs to process.")
+    parser.add_argument("--output-dir", type=str, default="output", help="Directory to save extracted JSON files.")
+
+    args = parser.parse_args()
+
+    pdf_path = args.extract
+    if not os.path.exists(pdf_path):
+        print(f"Error: The file {pdf_path} does not exist.")
+        return
+
+    pdf = pdfplumber.open(pdf_path)
+
+    
+    print(pdf.pages[37].extract_text())
+    extractor = FAQExtractor()
+    extractor.process_page(pdf.pages[37])
+    extractor.finalize()
+    # save test data to a file
+    output_path = os.path.join(args.output_dir, "test_faq.json")
+    with open(output_path, "w") as f:
+        json.dump(extractor.get_sections(), f, indent=2)
 
 if __name__ == "__main__":
     main()
+    # test_pdf_reading()
