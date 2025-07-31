@@ -29,5 +29,6 @@ def extract_and_save(pdf_path, output_dir):
 def save_to_json(data, output_path, metadata=None):
     if metadata:
         data = {**metadata, "data": data}
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w') as f:
         json.dump(data, f, indent=2)
