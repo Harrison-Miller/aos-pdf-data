@@ -1,6 +1,7 @@
 import re
 from datetime import datetime
-
+import unicodedata
+from extractors.utils import normalize_text
 
 class FAQExtractor:
     def __init__(self):
@@ -68,6 +69,8 @@ class FAQExtractor:
 
     def start_section(self, title):
         """Start a new section with the given title."""
+        self.finalize_question()
+        self.finalize_rule()  # Finalize any previous rule
         self.finalize_section()  # Finalize any previous section
         print(f"Starting section: {title}")
         self.section_title = title
@@ -115,6 +118,12 @@ class FAQExtractor:
     def start_rule(self, title):
         """Start a new rule with the given title."""
         # If a rule is already started, save it
+        self.finalize_rule()
+        self.rule_title = title
+
+    def finalize_rule(self):
+        """Finalize the current rule and add it to the list."""
+        self.finalize_question()
         if self.questions and (not self.rule_title or self.rule_title in ["Unknown Rule", "NEW", "UPDATED"]):
             print(f"Finalizing questions for section: {self.section_title}")
             self.rule_title = title
@@ -125,8 +134,7 @@ class FAQExtractor:
                 "title": self.rule_title,
                 "questions": self.questions
             })
-        print(f"Starting rule: {title}")
-        self.rule_title = title
+        self.rule_title = None
         self.questions = []
 
     def start_question(self, first_line):
@@ -146,8 +154,8 @@ class FAQExtractor:
     def finalize_question(self):
         """Finalize the current question and add it to the list."""
         if self.question_lines and self.answer_lines:
-            question_text = " ".join(self.question_lines).strip()
-            answer_text = " ".join(self.answer_lines).strip()
+            question_text = normalize_text(" ".join(self.question_lines).strip())
+            answer_text = normalize_text(" ".join(self.answer_lines).strip())
             if question_text and answer_text:
                 if self.rule_title:
                     print(f"Finalizing question: {question_text} with answer: {answer_text}")
@@ -170,13 +178,14 @@ class FAQExtractor:
 
     def finalize(self):
         self.finalize_question()
+        self.finalize_rule()
         
-        """Finalize the extraction by saving the last rule and section."""
-        if self.questions and self.rule_title:
-            self.rules.append({
-                "title": self.rule_title,
-                "questions": self.questions
-            })
+        # """Finalize the extraction by saving the last rule and section."""
+        # if self.questions and self.rule_title:
+        #     self.rules.append({
+        #         "title": self.rule_title,
+        #         "questions": self.questions
+        #     })
         self.finalize_section()
 
     def extract_from_page(self, lines):
@@ -264,7 +273,7 @@ def extract_text_from_columns(page):
                 current_line.append(word["text"])
 
         if current_line:
-            lines.append(" ".join(current_line))
+            lines.append(normalize_text(" ".join(current_line)))
 
         return lines
 

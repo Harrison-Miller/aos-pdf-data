@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Renderer</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Ensure assets are accessible
+        console.log('Ensure assets/link_icon.svg is available in the public directory.');
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="top-nav">
+            <li><a href="index.html">Rules</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="bps.html">Battle Profiles</a></li>
+        </ul>
+    </nav>
+    <div id="search-container">
+        <input type="text" id="faq-search" placeholder="Search FAQs..." oninput="filterFAQs()">
+    </div>
+    <div id="faq-root"></div>
+    <script src="faqRenderer.js"></script>
+    <script>
+        let faqData = [];
+
+        // Load FAQ data and render it
+        fetch('data/faq.json')
+            .then(response => response.json())
+            .then(data => {
+                faqData = data.data;
+                const faqRoot = document.getElementById('faq-root');
+                faqRoot.appendChild(renderFAQ(faqData));
+            })
+            .catch(error => console.error('Error loading FAQ data:', error));
+
+        // Function to filter FAQs based on search input
+        function filterFAQs() {
+            const searchText = document.getElementById('faq-search').value.toLowerCase();
+            const faqRoot = document.getElementById('faq-root');
+            const sections = faqRoot.querySelectorAll('.faq-section');
+
+            sections.forEach(section => {
+                // Get section title from <a> inside <h2>
+                const sectionTitleElem = section.querySelector('h2 a');
+                const sectionTitle = sectionTitleElem ? sectionTitleElem.textContent.toLowerCase() : '';
+                const rules = section.querySelectorAll('.faq-rule');
+                let sectionVisible = sectionTitle.includes(searchText);
+
+                rules.forEach(rule => {
+                    // Get rule title from <a> inside <h3>
+                    const ruleTitleElem = rule.querySelector('h3 a');
+                    const ruleTitle = ruleTitleElem ? ruleTitleElem.textContent.toLowerCase() : '';
+                    const qas = rule.querySelectorAll('.faq-qa');
+                    let ruleVisible = sectionVisible || ruleTitle.includes(searchText);
+
+                    qas.forEach(qa => {
+                        const questionElem = qa.querySelector('.faq-question');
+                        const answerElem = qa.querySelector('.faq-answer');
+                        const question = questionElem.textContent.toLowerCase();
+                        const answer = answerElem.textContent.toLowerCase();
+                        const qaVisible = question.includes(searchText) || answer.includes(searchText);
+
+                        // Remove previous highlights
+                        questionElem.innerHTML = questionElem.textContent;
+                        answerElem.innerHTML = answerElem.textContent;
+
+                        // Highlight matching text
+                        if (qaVisible) {
+                            if (searchText) {
+                                const highlight = (text) => text.replace(new RegExp(`(${searchText})`, 'gi'), '<span class="highlight">$1</span>');
+                                questionElem.innerHTML = highlight(questionElem.textContent);
+                                answerElem.innerHTML = highlight(answerElem.textContent);
+                            }
+                        }
+
+                        qa.style.display = qaVisible || ruleVisible ? '' : 'none';
+                        if (qaVisible) ruleVisible = true;
+                    });
+
+                    rule.style.display = ruleVisible ? '' : 'none';
+                    if (ruleVisible) sectionVisible = true;
+                });
+
+                section.style.display = sectionVisible ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>

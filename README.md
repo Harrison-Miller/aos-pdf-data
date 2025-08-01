@@ -31,6 +31,11 @@ python main.py --extract /path/to/your/file.pdf
 
 Replace `/path/to/your/file.pdf` with the path to your local PDF file.
 
+## 3. Run the demo site
+```bash
+python -m http.server --directory dist
+```
+
 ## Output
 
 Extracted JSON files will be saved in the `output/` directory:
@@ -38,7 +43,3 @@ Extracted JSON files will be saved in the `output/` directory:
 - `faq.json`
 - `rules.json`
 - `battleprofile.json`
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.

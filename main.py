@@ -45,9 +45,11 @@ def test_pdf_reading():
     pdf = pdfplumber.open(pdf_path)
 
     
-    print(pdf.pages[37].extract_text())
+    print(pdf.pages[35].extract_text())
     extractor = FAQExtractor()
-    extractor.process_page(pdf.pages[37])
+    extractor.process_page(pdf.pages[35]) # other digital rules
+    extractor.process_page(pdf.pages[37]) # bt: gsg
+    extractor.process_page(pdf.pages[40]) # bt: warclans
     extractor.finalize()
     # save test data to a file
     output_path = os.path.join(args.output_dir, "test_faq.json")
