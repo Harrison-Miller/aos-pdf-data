@@ -77,13 +77,15 @@ def test_bp_reading():
     #     print(w["text"])
 
     extractor = BPExtractor()
-    extractor.process_page(pdf.pages[2])  # test with the first page
+    extractor.process_page(pdf.pages[56])
+    # extractor.process_page(pdf.pages[8]) 
+    # extractor.process_page(pdf.pages[9])
     extractor.finalize()
     output_path = os.path.join(args.output_dir, "test_bp.json")
     with open(output_path, "w") as f:
         json.dump(extractor.get_battle_profiles(), f, indent=2)
 
 if __name__ == "__main__":
-    # main()
+    main()
     # test_faq_reading()
-    test_bp_reading()
+    # test_bp_reading()

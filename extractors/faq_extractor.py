@@ -20,7 +20,6 @@ class FAQExtractor:
     def process_page(self, page):
         """Process a single line of text."""
         left_lines, right_lines, outside_lines = extract_text_from_columns(page)
-        print("outside_lines:", outside_lines)
 
         # If no FAQ pairs are found, skip processing
         if (not contains_faq(left_lines + right_lines)):
@@ -99,17 +98,13 @@ class FAQExtractor:
         rule_title = None
         rule_lines = []
         # Read lines going up (reverse) from index-1 to 0
-        print("looking for rule title in lines before index:", index)
         for line in reversed(lines[:index]):
             text = line.strip()
             if not text or text == "NEW" or text == "UPDATED":
-                print(f"done looking for rule title: {text}")
                 break
             if text.isupper():
-                print(f"Adding to rule title: {text}")
                 rule_lines.insert(0, text)
             else:
-                print(f"Stopping rule title collection at: {text}")
                 break
         if rule_lines:
             rule_title = " ".join(rule_lines)
@@ -237,8 +232,6 @@ def extract_text_from_columns(page):
     else:
         # Fallback: use the whole page if no valid images
         image_bbox = {"top": 0, "bottom": float("inf"), "left": 0, "right": float("inf")}
-
-    print(f"Image bbox: {image_bbox} page size: {page.width}x{page.height}")
 
     # Separate words into outside text and column text
     for word in words:

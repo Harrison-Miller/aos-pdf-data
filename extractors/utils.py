@@ -8,12 +8,24 @@ def normalize_text(text):
         "”": '"',
         "‘": "'",
         "’": "'",
-        "–": "-",
+        "-": "-",
+        "✹": "",
+        "á": "a",
+    # emdash to dash
         "—": "-",
+        "‑": "-",
+        "-": "-",
         "…": "...",
+        "\u00d7": "x",
+        "’": "'",
+        "‑": "-",
     }
+    ntext = text
     for k, v in replacements.items():
-        text = text.replace(k, v)
+        ntext = ntext.replace(k, v)
     # Normalize to NFKD and encode to ASCII, ignoring errors
-    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
-    return text
+    # Instead of "ignore", you can use "replace" to show a replacement character (usually '?')
+    ntext = unicodedata.normalize("NFKD", ntext).encode("ascii", "ignore").decode("ascii")
+    if "?" in ntext:
+        print(f"Warning: Some characters were replaced with '?' in: {text}")
+    return ntext
