@@ -2,6 +2,15 @@ from pdfplumber import PDF
 import re
 from extractors.utils import normalize_text
 
+def extract_points(text):
+    # Always convert to an integer, return 0 if not possible
+    try:
+        # capture x (+|- y) we always want x
+        match = re.match(r"[-+]?\d+", normalize_text(text))
+        return int(match.group(0)) if match else 0
+    except Exception:
+        return 0
+
 class OtherBattleProfile:
     def __init__(self, name):
         self.name = normalize_text(name.replace('\n', ' ').strip())
@@ -12,11 +21,11 @@ class OtherBattleProfile:
     def process_row(self, header, row):
         """Process a row to extract other battle profile data."""
         if "TYPE" in header:
-            self.type = row[header.index("TYPE")]
+            self.type = normalize_text(row[header.index("TYPE")].replace('\n', ' ').strip())
         if "POINTS" in header:
-            self.points = row[header.index("POINTS")]
+            self.points = extract_points(row[header.index("POINTS")])
         if "NOTES" in header:
-            self.notes = row[header.index("NOTES")]
+            self.notes = normalize_text(row[header.index("NOTES")].replace('\n', ' ').strip())
 
     def to_dict(self):
         return {
@@ -28,7 +37,7 @@ class OtherBattleProfile:
 
 class RegimentOption:
     def __init__(self, line, keywords=[], unit_names=[], titled_units={}, subhero_categories=[]):
-        line = normalize_text(line.strip())
+        line = normalize_text(line.replace('\n', ' ').strip())
         self.line = line
         self.min = 0
         self.max = 0
@@ -55,23 +64,27 @@ class RegimentOption:
 
         self.keywords = []
         self.nonKeywords = []
-        self.subhero_category = ""
-        self.unit_name = ""
+        self.subhero_categories = []
+        self.unit_names = []
 
         for part in parts:
             part = part.strip()
             # check subhero categories
             if any(cat.lower() == part.lower() for cat in subhero_categories):
-                self.subhero_category = part
+                self.subhero_categories.append(part)
+            # allow plural forms for subhero categories
+            elif any(cat.lower() + "s" == part.lower() for cat in subhero_categories):
+                # part without s
+                self.subhero_categories.append(part[:-1] if part.endswith("s") else part)
             # check unit names
             elif any(name.lower() == part.lower() for name in unit_names):
-                self.unit_name = part
+                self.unit_names.append(part)
             elif any(name.lower() == part.lower() for name in titled_units):
                 # Find the matching titled unit key and get its full name
                 for key in titled_units:
                     if key.lower() == part.lower():
                         full_name = titled_units[key]
-                        self.unit_name = full_name
+                        self.unit_names.append(full_name)
                         break
             else:
                 # try non-keywords first
@@ -85,19 +98,24 @@ class RegimentOption:
                 if any(kw.lower() == part.lower() for kw in keywords):
                     self.keywords.append(part)
                 else:
-                    # try multiple keywords
-                    kw_parts = part.split()
-                    for kw in kw_parts:
-                        if kw.startswith("non-"):
-                            kw = kw[4:].strip()
-                            if any(kw.lower() == k.lower() for k in keywords):
-                                self.nonKeywords.append(kw)
-
-                        if any(kw.lower() == k.lower() for k in keywords):
-                            self.keywords.append(kw.strip())
+                    # Check if any keyword exists in the full part (case-insensitive)
+                    found = False
+                    for kw in keywords:
+                        if f'non-{kw.lower()}' in part.lower():
+                            found = True
+                            # Remove the keyword from the part (case-insensitive)
+                            pattern = re.compile(re.escape(f'non-{kw}'), re.IGNORECASE)
+                            part = pattern.sub("", part).strip()
+                            self.nonKeywords.append(kw)
+                        if kw.lower() in part.lower():
+                            found = True
+                            # Remove the keyword from the part (case-insensitive)
+                            pattern = re.compile(re.escape(kw), re.IGNORECASE)
+                            part = pattern.sub("", part).strip()
+                            self.keywords.append(kw)
 
     def valid(self):
-        return (self.max == -1 or self.max > 0) and (self.keywords or self.nonKeywords or self.subhero_category or self.unit_name)
+        return (self.max == -1 or self.max > 0) and (self.keywords or self.nonKeywords or self.subhero_categories or self.unit_names)
 
     def to_dict(self):
         return {
@@ -105,8 +123,8 @@ class RegimentOption:
             "max": self.max,
             "keywords": self.keywords,
             "nonKeywords": self.nonKeywords,
-            "subhero_category": self.subhero_category,
-            "unit_name": self.unit_name
+            "subhero_categories": self.subhero_categories,
+            "unit_names": self.unit_names
         }
 
     
@@ -122,19 +140,21 @@ class UnitBattleProfile:
         self.notes = []
         self.base_size = None
         self.subhero_categories = []  # Initialize subhero categories
-        self.reinforceable = self.unit_size != 1
+        self.reinforceable = False
         self.requiredLeader = ""
         self.undersizeCondition = ""
         self.retiringOn = ""
         self.exclusiveWith = ""
         self.legends = False
+        self.hero = False
 
     def process_row(self, header, row):
         """Process a row to extract unit battle profile data."""
         if "UNIT SIZE" in header and row[header.index("UNIT SIZE")]:
             self.unit_size = row[header.index("UNIT SIZE")]
+            self.reinforceable = self.unit_size != "1"
         if "POINTS" in header and row[header.index("POINTS")]:
-            self.points = row[header.index("POINTS")]
+            self.points = extract_points(row[header.index("POINTS")])
         if "RELEVANT KEYWORDS" in header and row[header.index("RELEVANT KEYWORDS")]:
             self.keywords = row[header.index("RELEVANT KEYWORDS")].split(",")
             self.keywords = [kw.strip() for kw in self.keywords if kw.strip()]
@@ -177,7 +197,7 @@ class UnitBattleProfile:
                 processed = True
 
             if n.startswith("This unit can be reinforced"):
-                reinforceable = True
+                self.reinforceable = True
                 processed = True
 
             # undersize unit condition:  You can include 1 unit of this type for each LordCelestant on Dracoth in your army
@@ -231,7 +251,8 @@ class UnitBattleProfile:
             "undersizeCondition": self.undersizeCondition,
             "retiringOn": self.retiringOn,
             "exclusiveWith": self.exclusiveWith,
-            "legends": self.legends
+            "legends": self.legends,
+            "hero": self.hero
         }
 
 class FactionBattleProfiles:
@@ -268,6 +289,9 @@ class FactionBattleProfiles:
             if is_legends:
                 self.battle_profiles[unit_name].legends = True
 
+            isHero = "hero" in header[0].lower()
+            self.battle_profiles[unit_name].hero = isHero
+
     def process_other(self, table):
         """Process a table of other types."""
         header = table[0]
@@ -289,14 +313,14 @@ class FactionBattleProfiles:
         return {
             "name": self.faction_name,
             "battle_profiles": [profile.to_dict() for profile in self.battle_profiles.values()],
-            "other": [profile.to_dict() for profile in self.other.values() if profile.points not in (None, "0", 0)]
+            "other": [profile.to_dict() for profile in self.other.values()]
         }
 
 class RegimentOfRenown():
     def __init__(self, row):
         self.name = normalize_text(row[0].replace('\n', ' ').strip())
         unitSummaryLines = row[1].replace('\n', ' ').strip().split("•")
-        self.points = int(row[2].strip()) if len(row) > 2 and row[2].strip().isdigit() else 0
+        self.points = extract_points(row[2].strip())
         notes = row[3].strip() if len(row) > 3 else ""
 
         self.units = {} # unit name to count
@@ -380,7 +404,7 @@ class BPExtractor:
         profiles = []
         for row in table[1:]:
             name = normalize_text(row[0].replace('\n', ' ').strip())
-            points = row[1].strip() if len(row) > 1 else 0
+            points = extract_points(row[1].strip())
             notes = row[2].strip() if len(row) > 2 else ""
             profiles.append({
                 "name": name,
@@ -395,7 +419,7 @@ class BPExtractor:
         profiles = []
         for row in table[1:]:
             name = normalize_text(row[0].replace('\n', ' ').strip())
-            points = row[1].strip() if len(row) > 1 else 0
+            points = extract_points(row[1].strip())
             profiles.append({
                 "name": name,
                 "points": points
@@ -416,7 +440,7 @@ class BPExtractor:
                 unit_names.append(profile.name)
                 subhero_categories.extend(profile.subhero_categories)
 
-        keywords = list(set(keywords))  # Remove duplicates
+        keywords = sorted(set(keywords), key=lambda x: (-len(x), x.lower()))  # Remove duplicates, sort longest first then alpha
         unit_names = list(set(unit_names))  # Remove duplicates
         subhero_categories = list(set(subhero_categories))  # Remove duplicates
         # units with names like: Name, Title. we want a map of Name to full name

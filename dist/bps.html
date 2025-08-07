@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AoS PDF Data - Battle Profiles</title>
     <link rel="stylesheet" href="style.css">
+    <script src="bpRenderer.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,53 @@
         </ul>
     </nav>
     <main>
-        <h1>Battle Profiles Coming Soon</h1>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(this, 'armies')">Armies</button>
+            <button class="tab-button" onclick="openTab(this, 'regiments')">Regiments of Renown</button>
+            <button class="tab-button" onclick="openTab(this, 'manifestations')">Universal
+                Manifestations</button>
+        </div>
+
+        <div id="armies" class="tab-content active">
+            <h2>Armies</h2>
+            <p>Loading army battle profiles...</p>
+        </div>
+
+        <div id="regiments" class="tab-content">
+            <h2>Regiments of Renown</h2>
+            <p>Loading regiment battle profiles...</p>
+        </div>
+
+        <div id="manifestations" class="tab-content">
+            <h2>Universal Manifestations</h2>
+            <p>Loading universal manifestations...</p>
+        </div>
     </main>
+
+    <script>
+        function openTab(button, tabName) {
+            var i, tabcontent, tablinks;
+
+            // Hide all tab content
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Remove active class from all tab buttons
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // Show the selected tab and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            button.classList.add("active");
+
+            // Update tab content with data
+            updateTabContent(tabName);
+        }
+    </script>
 </body>
 
 </html>

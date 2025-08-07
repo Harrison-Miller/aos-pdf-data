@@ -12,7 +12,24 @@ body {
     padding: 10px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Custom table column classes */
+.two-column-table th:nth-child(1),
+.two-column-table td:nth-child(1) {
+    width: 50%;
+}
+
+.two-column-table th:nth-child(2),
+.two-column-table td:nth-child(2) {
+    width: 50%;
+}
+
+.regiment-table th:nth-child(4),
+.regiment-table td:nth-child(4) {
+    width: 40%;
+    min-width: 250px;
 }
 
 .faq-section {
@@ -158,7 +175,231 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 80vh;
     text-align: center;
+    padding: 20px;
+}
+
+/* Tab styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+    margin: 0 2px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Battle Profile Table Styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.bp-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bp-table th {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.bp-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    text-align: left;
+}
+
+.bp-table .even-row {
+    background-color: #f9f9f9;
+}
+
+.bp-table .odd-row {
+    background-color: #fff;
+}
+
+.bp-table tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Data info styling */
+.data-info {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* List styling within table cells */
+.unit-list,
+.army-list {
+    margin: 0;
+    padding-left: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.unit-list li,
+.army-list li {
+    margin: 2px 0;
+    font-size: 13px;
+}
+
+.army-list.two-column {
+    columns: 2;
+    column-gap: 15px;
+}
+
+.army-list.two-column li {
+    break-inside: avoid;
+    margin: 3px 0;
+}
+
+/* Army selector styling */
+.army-selector-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.army-selector-container label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#army-select {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    min-width: 250px;
+    cursor: pointer;
+}
+
+#army-select:focus {
+    outline: none;
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.3);
+}
+
+/* Army content styling */
+#army-content {
+    margin-top: 20px;
+}
+
+#army-content h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+#army-content h4 {
+    color: #333;
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* List styling for regiment options and custom notes */
+.regiment-options-list,
+.custom-notes-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.regiment-options-list li,
+.custom-notes-list li {
+    margin: 2px 0;
+    font-size: 0.9em;
+}
+
+/* Badge styling */
+.badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 5px;
+    color: white;
+}
+
+.badge-legends {
+    background-color: #8e44ad;
+    /* Purple */
+}
+
+.badge-sog {
+    background-color: #27ae60;
+    /* Green */
+}
+
+/* Profile name subtitle styling */
+.profile-subtitle {
+    font-size: 0.8em;
+    color: #666;
+    font-weight: normal;
+    margin-top: 2px;
+    line-height: 1.2;
 }
