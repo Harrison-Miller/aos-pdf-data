@@ -1,0 +1,32 @@
+{
+    "factions": [
+        {
+            "name": "BLADES OF KHORNE",
+            "battle_profiles": [
+                {
+                    "name": "Magore's Fiends",
+                    "unit_size": "4",
+                    "points": 120,
+                    "keywords": [
+                        "Unique",
+                        "Bloodbound",
+                        "Infantry"
+                    ],
+                    "notes": [
+                        "This unit cannot be reinforced"
+                    ],
+                    "base_size": "32mm",
+                    "reinforceable": false,
+                    "subhero_categories": [],
+                    "regiment_options": [],
+                    "requiredLeader": "",
+                    "undersizeCondition": "",
+                    "retiringOn": "",
+                    "exclusiveWith": "",
+                    "legends": true,
+                    "hero": false
+                }
+            ]
+        }
+    ]
+}

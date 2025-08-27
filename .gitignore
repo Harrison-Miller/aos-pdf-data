@@ -10,6 +10,8 @@ output/
 output
 output/*
 
+downloads/
+
 # Ignore logs
 *.log
 

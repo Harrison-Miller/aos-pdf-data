@@ -1,9 +1,4 @@
 {
-  "title": "battle_profiles.pdf",
-  "filename": "battle_profiles.pdf",
-  "hash": "a123db635ae47db553d9bb3b97870f76",
-  "publishedDate": "2025-07-09",
-  "extractedDate": "2025-08-03",
   "type": "battleprofile",
   "data": {
     "universal_manifestations": [
@@ -279,7 +274,7 @@
         ]
       },
       {
-        "name": " Bloodthirsty Shiver",
+        "name": "Bloodthirsty Shiver",
         "units": {
           "Akhelian Allopex": 2
         },
@@ -352,7 +347,7 @@
         ]
       },
       {
-        "name": " Namarti Shore Raid",
+        "name": "Namarti Shore Raid",
         "units": {
           "Akhelian Thrallmaster": 1,
           "Namarti Reavers": 1,
@@ -882,7 +877,16 @@
             "subhero_categories": [
               "Shadow Agent"
             ],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "",
             "undersizeCondition": "",
             "retiringOn": "",
@@ -1372,7 +1376,16 @@
             "base_size": "28.5mm",
             "reinforceable": false,
             "subhero_categories": [],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "Galen ven Denst",
             "undersizeCondition": "",
             "retiringOn": "",
@@ -2800,7 +2813,16 @@
             "base_size": "100mm",
             "reinforceable": false,
             "subhero_categories": [],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "Morathi-Khaine",
             "undersizeCondition": "",
             "retiringOn": "",
@@ -4154,7 +4176,7 @@
             "hero": true
           },
           {
-            "name": " Akhelian Thrallmaster",
+            "name": "Akhelian Thrallmaster",
             "unit_size": "1",
             "points": 90,
             "keywords": [],
@@ -4164,6 +4186,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Akhelian Raidmaster",
               "Akhelian Raidmaster"
             ],
             "regiment_options": [
@@ -4262,7 +4285,7 @@
             "hero": true
           },
           {
-            "name": " Ikon of the Storm",
+            "name": "Ikon of the Storm",
             "unit_size": "1",
             "points": 120,
             "keywords": [],
@@ -4272,6 +4295,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Akhelian Raidmaster",
               "Akhelian Raidmaster"
             ],
             "regiment_options": [
@@ -4294,7 +4318,7 @@
             "hero": true
           },
           {
-            "name": " Ikon of the Sea",
+            "name": "Ikon of the Sea",
             "unit_size": "1",
             "points": 130,
             "keywords": [],
@@ -4304,6 +4328,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Akhelian Raidmaster",
               "Akhelian Raidmaster"
             ],
             "regiment_options": [
@@ -4336,6 +4361,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Isharann Emissary",
               "Isharann Emissary"
             ],
             "regiment_options": [
@@ -4378,6 +4404,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Isharann Emissary",
               "Isharann Emissary"
             ],
             "regiment_options": [
@@ -4410,7 +4437,7 @@
             "hero": true
           },
           {
-            "name": " Isharann Tidecaster",
+            "name": "Isharann Tidecaster",
             "unit_size": "1",
             "points": 120,
             "keywords": [],
@@ -4448,7 +4475,7 @@
             "hero": true
           },
           {
-            "name": " Lotann, Warden of the Soul Ledgers",
+            "name": "Lotann, Warden of the Soul Ledgers",
             "unit_size": "1",
             "points": 110,
             "keywords": [],
@@ -4458,6 +4485,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Isharann Emissary",
               "Isharann Emissary"
             ],
             "regiment_options": [
@@ -4480,7 +4508,7 @@
             "hero": true
           },
           {
-            "name": " Mathaela, Oracle of the Abyss",
+            "name": "Mathaela, Oracle of the Abyss",
             "unit_size": "1",
             "points": 160,
             "keywords": [],
@@ -4518,7 +4546,7 @@
             "hero": true
           },
           {
-            "name": " Volturnos, High King of the Deep",
+            "name": "Volturnos, High King of the Deep",
             "unit_size": "1",
             "points": 230,
             "keywords": [],
@@ -4568,6 +4596,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Akhelian Raidmaster",
               "Akhelian Raidmaster"
             ],
             "regiment_options": [
@@ -4632,7 +4661,7 @@
             "hero": false
           },
           {
-            "name": " Akhelian Leviadon",
+            "name": "Akhelian Leviadon",
             "unit_size": "1",
             "points": 480,
             "keywords": [
@@ -4674,7 +4703,7 @@
             "hero": false
           },
           {
-            "name": " Namarti Reavers",
+            "name": "Namarti Reavers",
             "unit_size": "10",
             "points": 140,
             "keywords": [
@@ -4798,7 +4827,7 @@
           },
           {
             "name": "Akhelian Beastmasters",
-            "type": " Battle Formation",
+            "type": "Battle Formation",
             "points": 20,
             "notes": "Battletome: Idoneth Deepkin"
           },
@@ -4828,7 +4857,7 @@
           },
           {
             "name": "Form of the Fangmora",
-            "type": " Heroic Trait",
+            "type": "Heroic Trait",
             "points": 20,
             "notes": "Battletome: Idoneth Deepkin"
           },
@@ -4864,13 +4893,13 @@
           },
           {
             "name": "Armour of the Cythai",
-            "type": " Artefact of Power",
+            "type": "Artefact of Power",
             "points": 0,
             "notes": "Battletome: Idoneth Deepkin"
           },
           {
             "name": "Lifekelp Pod",
-            "type": " Artefact of Power",
+            "type": "Artefact of Power",
             "points": 0,
             "notes": "Battletome: Idoneth Deepkin"
           },
@@ -4888,7 +4917,7 @@
           },
           {
             "name": "Lore of the Abyss",
-            "type": " Manifestation Lore",
+            "type": "Manifestation Lore",
             "points": 0,
             "notes": "Battletome: Idoneth Deepkin"
           },
@@ -4914,6 +4943,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Guild Officer",
               "Guild Officer"
             ],
             "regiment_options": [
@@ -4956,6 +4986,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Guild Officer",
               "Guild Officer"
             ],
             "regiment_options": [
@@ -4990,7 +5021,7 @@
           {
             "name": "Arkanaut Admiral",
             "unit_size": "1",
-            "points": 130,
+            "points": 140,
             "keywords": [],
             "notes": [],
             "base_size": "32mm",
@@ -5074,6 +5105,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Guild Officer",
               "Guild Officer"
             ],
             "regiment_options": [
@@ -5108,7 +5140,7 @@
           {
             "name": "Drekki Flynt",
             "unit_size": "1",
-            "points": 140,
+            "points": 130,
             "keywords": [],
             "notes": [],
             "base_size": "32mm",
@@ -5156,7 +5188,7 @@
           {
             "name": "Endrinmaster with Dirigible Suit",
             "unit_size": "1",
-            "points": 150,
+            "points": 160,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Guild Officer"
@@ -5164,6 +5196,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Guild Officer",
               "Guild Officer"
             ],
             "regiment_options": [
@@ -5198,7 +5231,7 @@
           {
             "name": "Endrinmaster with Endrinharness",
             "unit_size": "1",
-            "points": 110,
+            "points": 120,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Guild Officer"
@@ -5206,6 +5239,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Guild Officer",
               "Guild Officer"
             ],
             "regiment_options": [
@@ -5249,6 +5283,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Guild Officer",
               "Guild Officer"
             ],
             "regiment_options": [
@@ -5469,6 +5504,98 @@
             "exclusiveWith": "",
             "legends": true,
             "hero": false
+          },
+          {
+            "name": "Null-Khemist",
+            "unit_size": "1",
+            "points": 130,
+            "keywords": [],
+            "notes": [
+              "This Hero can join an eligible regiment as a Guild Officer"
+            ],
+            "base_size": "40mm",
+            "reinforceable": false,
+            "subhero_categories": [
+              "Guild Officer"
+            ],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 1,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [
+                  "Guild Officer"
+                ],
+                "unit_names": []
+              },
+              {
+                "min": 0,
+                "max": 1,
+                "keywords": [
+                  "Skyvessel"
+                ],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              },
+              {
+                "min": 0,
+                "max": -1,
+                "keywords": [
+                  "Infantry"
+                ],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
+            "requiredLeader": "",
+            "undersizeCondition": "",
+            "retiringOn": "",
+            "exclusiveWith": "",
+            "legends": false,
+            "hero": true
+          },
+          {
+            "name": "Vongrim Harpoon Crew",
+            "unit_size": "5",
+            "points": 90,
+            "keywords": [
+              "Duardin",
+              "Infantry"
+            ],
+            "notes": [],
+            "base_size": "32mm",
+            "reinforceable": true,
+            "subhero_categories": [],
+            "regiment_options": [],
+            "requiredLeader": "",
+            "undersizeCondition": "",
+            "retiringOn": "",
+            "exclusiveWith": "",
+            "legends": false,
+            "hero": false
+          },
+          {
+            "name": "Vongrim Salvagers",
+            "unit_size": "5",
+            "points": 100,
+            "keywords": [
+              "Duardin",
+              "Infantry"
+            ],
+            "notes": [],
+            "base_size": "32mm",
+            "reinforceable": true,
+            "subhero_categories": [],
+            "regiment_options": [],
+            "requiredLeader": "",
+            "undersizeCondition": "",
+            "retiringOn": "",
+            "exclusiveWith": "",
+            "legends": false,
+            "hero": false
           }
         ],
         "other": [
@@ -5488,7 +5615,7 @@
             "name": "Endrineers Guild Expeditionary Force",
             "type": "Battle Formation",
             "points": 0,
-            "notes": "Faction Pack: Kharadron Overlords"
+            "notes": "Battletome: Kharadron Overlords"
           },
           {
             "name": "Grundcorps Wing",
@@ -5524,13 +5651,13 @@
             "name": "Celestium Burst-grenade",
             "type": "Artefact of Power",
             "points": 0,
-            "notes": "Faction Pack: Kharadron Overlords"
+            "notes": "Battletome: Kharadron Overlords"
           },
           {
             "name": "Voidstone Orb",
             "type": "Artefact of Power",
             "points": 0,
-            "notes": "Faction Pack: Kharadron Overlords"
+            "notes": "Battletome: Kharadron Overlords"
           },
           {
             "name": "Spell in a Bottle",
@@ -5567,6 +5694,90 @@
             "type": "Skyvessel Upgrade",
             "points": 0,
             "notes": "Scourge of Ghyran"
+          },
+          {
+            "name": "Pioneers and Scavengers",
+            "type": "Battle Formation",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Rapid Redeployment Squadron",
+            "type": "Battle Formation",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Veteran Ground Troops",
+            "type": "Battle Formation",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Shrewd Opportunist",
+            "type": "Heroic Trait",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Bold as Brass",
+            "type": "Heroic Trait",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Combat Grafter",
+            "type": "Heroic Trait",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Blazebeard and Sons Bamboozling Flakgun",
+            "type": "Artefact of Power",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Hegsson Solutions 'Old Reliable' Hullplates",
+            "type": "Great Endrinworks",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Gruksson Wide-Bore Cylinders",
+            "type": "Great Endrinworks",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Coalbeard's Collapsible Bombrack",
+            "type": "Great Endrinworks",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Tracer-Fire Rounds",
+            "type": "Great Endrinworks",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Grandiose Fuselage",
+            "type": "Great Endrinworks",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Nullstone Galvanisation",
+            "type": "Great Endrinworks",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
+          },
+          {
+            "name": "Zontari Endrin Dock",
+            "type": "Faction Terrain",
+            "points": 0,
+            "notes": "Battletome: Kharadron Overlords"
           }
         ]
       },
@@ -6927,12 +7138,12 @@
               {
                 "min": 0,
                 "max": -1,
-                "keywords": [],
+                "keywords": [
+                  "Kroxigor"
+                ],
                 "nonKeywords": [],
                 "subhero_categories": [],
-                "unit_names": [
-                  "Kroxigor"
-                ]
+                "unit_names": []
               },
               {
                 "min": 0,
@@ -6989,12 +7200,12 @@
               {
                 "min": 0,
                 "max": -1,
-                "keywords": [],
+                "keywords": [
+                  "Kroxigor"
+                ],
                 "nonKeywords": [],
                 "subhero_categories": [],
-                "unit_names": [
-                  "Kroxigor"
-                ]
+                "unit_names": []
               },
               {
                 "min": 0,
@@ -7049,12 +7260,12 @@
               {
                 "min": 0,
                 "max": -1,
-                "keywords": [],
+                "keywords": [
+                  "Kroxigor"
+                ],
                 "nonKeywords": [],
                 "subhero_categories": [],
-                "unit_names": [
-                  "Kroxigor"
-                ]
+                "unit_names": []
               },
               {
                 "min": 0,
@@ -7149,12 +7360,12 @@
               {
                 "min": 0,
                 "max": -1,
-                "keywords": [],
+                "keywords": [
+                  "Kroxigor"
+                ],
                 "nonKeywords": [],
                 "subhero_categories": [],
-                "unit_names": [
-                  "Kroxigor"
-                ]
+                "unit_names": []
               },
               {
                 "min": 0,
@@ -8426,7 +8637,16 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "Neave Blacktalon",
             "undersizeCondition": "",
             "retiringOn": "",
@@ -11591,6 +11811,7 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
+                  "BLADES OF KHORNE",
                   "Daemon"
                 ],
                 "nonKeywords": [],
@@ -11616,6 +11837,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Bloodbound Warmonger",
               "Bloodbound Warmonger"
             ],
             "regiment_options": [
@@ -11648,6 +11870,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Bloodbound Warmonger",
               "Bloodbound Warmonger"
             ],
             "regiment_options": [
@@ -11672,7 +11895,7 @@
           {
             "name": "Bloodthirster of Insensate Rage",
             "unit_size": "1",
-            "points": 460,
+            "points": 420,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Baleful Lord"
@@ -11680,6 +11903,7 @@
             "base_size": "120 x 92mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Baleful Lord",
               "Baleful Lord"
             ],
             "regiment_options": [
@@ -11697,7 +11921,8 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Blades of Khorne"
+                  "BLADES OF KHORNE",
+                  "Daemon"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -11714,7 +11939,7 @@
           {
             "name": "Bloodthirster of Unfettered Fury",
             "unit_size": "1",
-            "points": 450,
+            "points": 410,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Baleful Lord"
@@ -11722,6 +11947,7 @@
             "base_size": "120 x 92mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Baleful Lord",
               "Baleful Lord"
             ],
             "regiment_options": [
@@ -11739,7 +11965,8 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Blades of Khorne"
+                  "BLADES OF KHORNE",
+                  "Daemon"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -11788,7 +12015,7 @@
           {
             "name": "Herald of Khorne on Blood Throne",
             "unit_size": "1",
-            "points": 200,
+            "points": 160,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -11809,6 +12036,7 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
+                  "BLADES OF KHORNE",
                   "Daemon"
                 ],
                 "nonKeywords": [],
@@ -11833,16 +12061,6 @@
             "reinforceable": false,
             "subhero_categories": [],
             "regiment_options": [
-              {
-                "min": 0,
-                "max": 1,
-                "keywords": [],
-                "nonKeywords": [],
-                "subhero_categories": [],
-                "unit_names": [
-                  "Mighty Lord of Khorne"
-                ]
-              },
               {
                 "min": 0,
                 "max": -1,
@@ -11876,7 +12094,9 @@
             "unit_size": "1",
             "points": 200,
             "keywords": [],
-            "notes": [],
+            "notes": [
+              "This unit will move to Warhammer Legends on 1 June 2026"
+            ],
             "base_size": "90 x 52mm",
             "reinforceable": false,
             "subhero_categories": [],
@@ -11894,7 +12114,7 @@
             ],
             "requiredLeader": "",
             "undersizeCondition": "",
-            "retiringOn": "",
+            "retiringOn": "1 June 2026",
             "exclusiveWith": "",
             "legends": false,
             "hero": true
@@ -11902,7 +12122,7 @@
           {
             "name": "Mighty Lord of Khorne",
             "unit_size": "1",
-            "points": 130,
+            "points": 150,
             "keywords": [],
             "notes": [],
             "base_size": "60mm",
@@ -11921,19 +12141,9 @@
               },
               {
                 "min": 0,
-                "max": 1,
-                "keywords": [],
-                "nonKeywords": [],
-                "subhero_categories": [],
-                "unit_names": [
-                  "Karanak"
-                ]
-              },
-              {
-                "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Blades of Khorne"
+                  "Bloodbound"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -11978,7 +12188,7 @@
           {
             "name": "Skarbrand",
             "unit_size": "1",
-            "points": 470,
+            "points": 450,
             "keywords": [],
             "notes": [],
             "base_size": "100mm",
@@ -11999,7 +12209,8 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Blades of Khorne"
+                  "BLADES OF KHORNE",
+                  "Daemon"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -12018,7 +12229,9 @@
             "unit_size": "1",
             "points": 140,
             "keywords": [],
-            "notes": [],
+            "notes": [
+              "This unit will move to Warhammer Legends on 1 June 2026"
+            ],
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [],
@@ -12036,7 +12249,7 @@
             ],
             "requiredLeader": "",
             "undersizeCondition": "",
-            "retiringOn": "",
+            "retiringOn": "1 June 2026",
             "exclusiveWith": "",
             "legends": false,
             "hero": true
@@ -12044,7 +12257,7 @@
           {
             "name": "Skullgrinder",
             "unit_size": "1",
-            "points": 110,
+            "points": 100,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Bloodbound Warmonger"
@@ -12052,6 +12265,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Bloodbound Warmonger",
               "Bloodbound Warmonger"
             ],
             "regiment_options": [
@@ -12078,7 +12292,9 @@
             "unit_size": "1",
             "points": 130,
             "keywords": [],
-            "notes": [],
+            "notes": [
+              "This unit will move to Warhammer Legends on 1 June 2026"
+            ],
             "base_size": "90 x 52mm",
             "reinforceable": false,
             "subhero_categories": [],
@@ -12107,7 +12323,7 @@
             ],
             "requiredLeader": "",
             "undersizeCondition": "",
-            "retiringOn": "",
+            "retiringOn": "1 June 2026",
             "exclusiveWith": "",
             "legends": false,
             "hero": true
@@ -12115,7 +12331,7 @@
           {
             "name": "Skulltaker",
             "unit_size": "1",
-            "points": 130,
+            "points": 120,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Slaughter Seeker"
@@ -12123,6 +12339,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Slaughter Seeker",
               "Slaughter Seeker"
             ],
             "regiment_options": [
@@ -12130,6 +12347,7 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
+                  "BLADES OF KHORNE",
                   "Daemon"
                 ],
                 "nonKeywords": [],
@@ -12147,7 +12365,7 @@
           {
             "name": "Slaughterpriest",
             "unit_size": "1",
-            "points": 160,
+            "points": 130,
             "keywords": [],
             "notes": [],
             "base_size": "40mm",
@@ -12175,7 +12393,7 @@
           {
             "name": "Wrath of Khorne Bloodthirster",
             "unit_size": "1",
-            "points": 400,
+            "points": 410,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -12244,19 +12462,9 @@
               },
               {
                 "min": 0,
-                "max": 1,
-                "keywords": [],
-                "nonKeywords": [],
-                "subhero_categories": [],
-                "unit_names": [
-                  "Karanak"
-                ]
-              },
-              {
-                "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Blades of Khorne"
+                  "Bloodbound"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -12273,7 +12481,7 @@
           {
             "name": "Blood Warriors",
             "unit_size": "10",
-            "points": 220,
+            "points": 200,
             "keywords": [
               "Bloodbound",
               "Infantry"
@@ -12293,7 +12501,7 @@
           {
             "name": "Bloodcrushers",
             "unit_size": "3",
-            "points": 160,
+            "points": 150,
             "keywords": [
               "Daemon",
               "Cavalry"
@@ -12313,7 +12521,7 @@
           {
             "name": "Bloodletters",
             "unit_size": "10",
-            "points": 200,
+            "points": 170,
             "keywords": [
               "Daemon",
               "Infantry"
@@ -12333,7 +12541,7 @@
           {
             "name": "Bloodreavers",
             "unit_size": "10",
-            "points": 90,
+            "points": 80,
             "keywords": [
               "Bloodbound",
               "Infantry"
@@ -12353,7 +12561,7 @@
           {
             "name": "Claws of Karanak",
             "unit_size": "8",
-            "points": 110,
+            "points": 100,
             "keywords": [
               "Bloodbound",
               "Infantry"
@@ -12375,7 +12583,7 @@
           {
             "name": "Flesh Hounds",
             "unit_size": "5",
-            "points": 110,
+            "points": 100,
             "keywords": [
               "Daemon",
               "Beast"
@@ -12455,7 +12663,7 @@
           {
             "name": "Skullreapers",
             "unit_size": "5",
-            "points": 230,
+            "points": 190,
             "keywords": [
               "Bloodbound",
               "Infantry"
@@ -12475,7 +12683,7 @@
           {
             "name": "Wrathmongers",
             "unit_size": "5",
-            "points": 130,
+            "points": 140,
             "keywords": [
               "Bloodbound",
               "Infantry"
@@ -12627,12 +12835,50 @@
             "hero": false
           },
           {
-            "name": "Magore's Fiends 4 120 Unique, Bloodbound, Infantry This unit cannot be reinforced. 32mm",
-            "unit_size": null,
-            "points": null,
+            "name": "Deathbringer",
+            "unit_size": "1",
+            "points": 120,
             "keywords": [],
-            "notes": [],
-            "base_size": null,
+            "notes": [
+              "This Hero can join an eligible regiment as a Bloodbound Warmonger"
+            ],
+            "base_size": "40mm",
+            "reinforceable": false,
+            "subhero_categories": [
+              "Bloodbound Warmonger"
+            ],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": -1,
+                "keywords": [
+                  "Bloodbound"
+                ],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
+            "requiredLeader": "",
+            "undersizeCondition": "",
+            "retiringOn": "",
+            "exclusiveWith": "",
+            "legends": false,
+            "hero": true
+          },
+          {
+            "name": "Magore's Fiends",
+            "unit_size": "4",
+            "points": 120,
+            "keywords": [
+              "Unique",
+              "Bloodbound",
+              "Infantry"
+            ],
+            "notes": [
+              "This unit cannot be reinforced"
+            ],
+            "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [],
             "regiment_options": [],
@@ -12649,25 +12895,25 @@
             "name": "Khornate Legion",
             "type": "Battle Formation",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Murder Host",
             "type": "Battle Formation",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Brass Stampede",
             "type": "Battle Formation",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Bloodbound Warhorde",
             "type": "Battle Formation",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Tournament of Skulls",
@@ -12703,13 +12949,13 @@
             "name": "Ar'gath, the King of Blades",
             "type": "Artefact of Power",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Collar of Contempt",
             "type": "Artefact of Power",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Halo of Blood",
@@ -12721,7 +12967,7 @@
             "name": "Blood Blessings of Khorne",
             "type": "Prayer Lore",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Gifts of the Blood God",
@@ -12733,13 +12979,37 @@
             "name": "Judgements of Khorne",
             "type": "Manifestation Lore",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
           },
           {
             "name": "Skull Altar",
             "type": "Faction Terrain",
             "points": 0,
-            "notes": "Faction Pack: Blades of Khorne"
+            "notes": "Battletome: Blades of Khorne"
+          },
+          {
+            "name": "Magical Scorn",
+            "type": "Heroic Trait",
+            "points": 0,
+            "notes": "Battletome: Blades of Khorne"
+          },
+          {
+            "name": "Skull Collector",
+            "type": "Heroic Trait",
+            "points": 0,
+            "notes": "Battletome: Blades of Khorne"
+          },
+          {
+            "name": "Frenzied Taskmaster",
+            "type": "Heroic Trait",
+            "points": 0,
+            "notes": "Battletome: Blades of Khorne"
+          },
+          {
+            "name": "Butcher's Blade",
+            "type": "Artefact of Power",
+            "points": 0,
+            "notes": "Battletome: Blades of Khorne"
           }
         ]
       },
@@ -15906,10 +16176,10 @@
           {
             "name": "Clawlord",
             "unit_size": "1",
-            "points": 70,
+            "points": 100,
             "keywords": [],
             "notes": [
-              "This Hero can join an eligible regiment as a Skaven Overclaw"
+              "This Hero can join a Verminlord Warbringer's regiment or an eligible regiment as a Skaven Overclaw"
             ],
             "base_size": "32mm",
             "reinforceable": false,
@@ -15938,10 +16208,10 @@
           {
             "name": "Clawlord on Gnaw-beast",
             "unit_size": "1",
-            "points": 110,
+            "points": 160,
             "keywords": [],
             "notes": [
-              "This Hero can join an eligible regiment as a Skaven Overclaw"
+              "This Hero can join a Verminlord Warbringer's regiment or an eligible regiment as a Skaven Overclaw"
             ],
             "base_size": "90 x 52mm",
             "reinforceable": false,
@@ -15970,10 +16240,10 @@
           {
             "name": "Deathmaster",
             "unit_size": "1",
-            "points": 100,
+            "points": 160,
             "keywords": [],
             "notes": [
-              "This Hero can join an eligible regiment as a Skaven Overclaw"
+              "This Hero can join a Verminlord Deceiver's regiment or an eligible regiment as a Skaven Overclaw"
             ],
             "base_size": "32mm",
             "reinforceable": false,
@@ -16088,7 +16358,7 @@
           {
             "name": "Krittok Foulblade",
             "unit_size": "1",
-            "points": 160,
+            "points": 220,
             "keywords": [],
             "notes": [],
             "base_size": "40mm",
@@ -16097,19 +16367,9 @@
             "regiment_options": [
               {
                 "min": 0,
-                "max": 1,
-                "keywords": [],
-                "nonKeywords": [],
-                "subhero_categories": [
-                  "Skaven Overclaw"
-                ],
-                "unit_names": []
-              },
-              {
-                "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Skaven"
+                  "Verminus"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -16126,7 +16386,7 @@
           {
             "name": "Lord Skreech Verminking",
             "unit_size": "1",
-            "points": 380,
+            "points": 430,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -16164,7 +16424,7 @@
           {
             "name": "Master Moulder",
             "unit_size": "1",
-            "points": 80,
+            "points": 100,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Skaven Overclaw"
@@ -16206,7 +16466,7 @@
           {
             "name": "Plague Priest on Plague Furnace",
             "unit_size": "1",
-            "points": 310,
+            "points": 340,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -16247,7 +16507,7 @@
             "points": 360,
             "keywords": [],
             "notes": [],
-            "base_size": "105 x 70mm",
+            "base_size": "90 x 52mm",
             "reinforceable": false,
             "subhero_categories": [],
             "regiment_options": [
@@ -16282,7 +16542,7 @@
           {
             "name": "Verminlord Corruptor",
             "unit_size": "1",
-            "points": 320,
+            "points": 360,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -16294,16 +16554,16 @@
                 "max": 1,
                 "keywords": [],
                 "nonKeywords": [],
-                "subhero_categories": [
-                  "Skaven Overclaw"
-                ],
-                "unit_names": []
+                "subhero_categories": [],
+                "unit_names": [
+                  "Clanrats"
+                ]
               },
               {
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Skaven"
+                  "Pestilens"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -16320,7 +16580,7 @@
           {
             "name": "Verminlord Deceiver",
             "unit_size": "1",
-            "points": 390,
+            "points": 410,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -16332,16 +16592,26 @@
                 "max": 1,
                 "keywords": [],
                 "nonKeywords": [],
-                "subhero_categories": [
-                  "Skaven Overclaw"
-                ],
-                "unit_names": []
+                "subhero_categories": [],
+                "unit_names": [
+                  "Clanrats"
+                ]
+              },
+              {
+                "min": 0,
+                "max": 1,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": [
+                  "Deathmaster"
+                ]
               },
               {
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Skaven"
+                  "Eshin"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -16358,7 +16628,7 @@
           {
             "name": "Verminlord Warbringer",
             "unit_size": "1",
-            "points": 310,
+            "points": 350,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -16370,16 +16640,16 @@
                 "max": 1,
                 "keywords": [],
                 "nonKeywords": [],
-                "subhero_categories": [
-                  "Skaven Overclaw"
-                ],
-                "unit_names": []
+                "subhero_categories": [],
+                "unit_names": [
+                  "Clawlord"
+                ]
               },
               {
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Skaven"
+                  "Verminus"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -16396,7 +16666,7 @@
           {
             "name": "Verminlord Warpseer",
             "unit_size": "1",
-            "points": 320,
+            "points": 340,
             "keywords": [],
             "notes": [],
             "base_size": "120 x 92mm",
@@ -16434,7 +16704,7 @@
           {
             "name": "Vizzik Skour, Prophet of the Horned Rat",
             "unit_size": "1",
-            "points": 380,
+            "points": 450,
             "keywords": [],
             "notes": [],
             "base_size": "130mm",
@@ -16472,7 +16742,7 @@
           {
             "name": "Warlock Bombardier",
             "unit_size": "1",
-            "points": 90,
+            "points": 120,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Skaven Overclaw"
@@ -16514,7 +16784,7 @@
           {
             "name": "Warlock Engineer",
             "unit_size": "1",
-            "points": 110,
+            "points": 140,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Skaven Overclaw"
@@ -16638,7 +16908,7 @@
           {
             "name": "Acolyte Globadiers",
             "unit_size": "5",
-            "points": 90,
+            "points": 130,
             "keywords": [
               "Skryre",
               "Infantry",
@@ -16661,13 +16931,13 @@
           {
             "name": "Brood Terror",
             "unit_size": "1",
-            "points": 260,
+            "points": 300,
             "keywords": [
               "Moulder",
               "Monster"
             ],
             "notes": [],
-            "base_size": "90mm",
+            "base_size": "90 x 52mm",
             "reinforceable": false,
             "subhero_categories": [],
             "regiment_options": [],
@@ -16701,7 +16971,7 @@
           {
             "name": "Doom-Flayers",
             "unit_size": "2",
-            "points": 110,
+            "points": 130,
             "keywords": [
               "Skryre",
               "War Machine"
@@ -16723,7 +16993,7 @@
           {
             "name": "Doomwheel",
             "unit_size": "1",
-            "points": 110,
+            "points": 140,
             "keywords": [
               "Skryre",
               "War Machine"
@@ -16745,7 +17015,7 @@
           {
             "name": "Hell Pit Abomination",
             "unit_size": "1",
-            "points": 200,
+            "points": 270,
             "keywords": [
               "Moulder",
               "Monster"
@@ -16765,7 +17035,7 @@
           {
             "name": "Night Runners",
             "unit_size": "10",
-            "points": 120,
+            "points": 130,
             "keywords": [
               "Eshin",
               "Infantry"
@@ -16785,7 +17055,7 @@
           {
             "name": "Plague Monks",
             "unit_size": "20",
-            "points": 130,
+            "points": 140,
             "keywords": [
               "Pestilens",
               "Infantry"
@@ -16805,7 +17075,7 @@
           {
             "name": "Plagueclaw",
             "unit_size": "1",
-            "points": 100,
+            "points": 140,
             "keywords": [
               "Pestilens",
               "War Machine"
@@ -16834,7 +17104,7 @@
               "This unit cannot be reinforced"
             ],
             "base_size": "32mm [1], 28.5mm [1], 25mm [4]",
-            "reinforceable": false,
+            "reinforceable": true,
             "subhero_categories": [],
             "regiment_options": [],
             "requiredLeader": "",
@@ -16847,7 +17117,7 @@
           {
             "name": "Rat Ogors",
             "unit_size": "3",
-            "points": 140,
+            "points": 160,
             "keywords": [
               "Moulder",
               "Infantry"
@@ -16867,7 +17137,7 @@
           {
             "name": "Ratling Guns",
             "unit_size": "3",
-            "points": 170,
+            "points": 150,
             "keywords": [
               "Skryre",
               "Infantry",
@@ -16890,7 +17160,7 @@
           {
             "name": "Ratling Warpblaster",
             "unit_size": "1",
-            "points": 140,
+            "points": 180,
             "keywords": [
               "Skryre",
               "War Machine"
@@ -16912,7 +17182,7 @@
           {
             "name": "Stormfiends",
             "unit_size": "3",
-            "points": 250,
+            "points": 260,
             "keywords": [
               "Skryre",
               "Moulder",
@@ -16933,7 +17203,7 @@
           {
             "name": "Stormvermin",
             "unit_size": "10",
-            "points": 120,
+            "points": 140,
             "keywords": [
               "Verminus",
               "Infantry"
@@ -16953,7 +17223,7 @@
           {
             "name": "Warp-Grinder",
             "unit_size": "1",
-            "points": 130,
+            "points": 170,
             "keywords": [
               "Skryre",
               "War Machine"
@@ -16975,7 +17245,7 @@
           {
             "name": "Warp Lightning Cannon",
             "unit_size": "1",
-            "points": 120,
+            "points": 160,
             "keywords": [
               "Skryre",
               "War Machine"
@@ -17020,7 +17290,7 @@
           {
             "name": "Warplock Jezzails",
             "unit_size": "3",
-            "points": 140,
+            "points": 150,
             "keywords": [
               "Skryre",
               "Infantry"
@@ -17040,7 +17310,7 @@
           {
             "name": "Warpvolt Scourgers",
             "unit_size": "3",
-            "points": 180,
+            "points": 190,
             "keywords": [
               "Skryre",
               "Infantry",
@@ -18092,7 +18362,16 @@
             "base_size": "60 x 35mm",
             "reinforceable": false,
             "subhero_categories": [],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "Gunnar Brand",
             "undersizeCondition": "",
             "retiringOn": "",
@@ -22192,7 +22471,7 @@
           {
             "name": "Blades of the Hollow King",
             "unit_size": "3",
-            "points": 290,
+            "points": 310,
             "keywords": [],
             "notes": [
               "You cannot include this unit and Cado Ezechiar, the Hollow King in the same army"
@@ -22255,8 +22534,7 @@
             "points": 150,
             "keywords": [],
             "notes": [
-              "This unit will move to Warhammer Legends on 1 June 2026",
-              "You cannot include this unit and the Blades of the Hollow King in the same army"
+              "This unit will move to Warhammer Legends on 1 June 2026"
             ],
             "base_size": "40mm",
             "reinforceable": false,
@@ -22320,6 +22598,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Vyrkos Retainer",
               "Vyrkos Retainer"
             ],
             "regiment_options": [
@@ -22352,6 +22631,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Vyrkos Retainer",
               "Vyrkos Retainer"
             ],
             "regiment_options": [
@@ -22384,6 +22664,7 @@
             "base_size": "60 x 35mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Vyrkos Retainer",
               "Vyrkos Retainer"
             ],
             "regiment_options": [
@@ -22408,7 +22689,7 @@
           {
             "name": "Lady Annika, the Thirsting Blade",
             "unit_size": "1",
-            "points": 110,
+            "points": 130,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Vyrkos Retainer"
@@ -22416,6 +22697,7 @@
             "base_size": "60 x 35mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Vyrkos Retainer",
               "Vyrkos Retainer"
             ],
             "regiment_options": [
@@ -22658,10 +22940,10 @@
           {
             "name": "Prince Vhordrai",
             "unit_size": "1",
-            "points": 490,
+            "points": 500,
             "keywords": [],
             "notes": [],
-            "base_size": "160mm",
+            "base_size": "130mm",
             "reinforceable": false,
             "subhero_categories": [],
             "regiment_options": [
@@ -22813,6 +23095,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Vyrkos Retainer",
               "Vyrkos Retainer"
             ],
             "regiment_options": [
@@ -22865,7 +23148,7 @@
           {
             "name": "Vampire Lord on Nightmare Steed",
             "unit_size": "1",
-            "points": 190,
+            "points": 210,
             "keywords": [],
             "notes": [],
             "base_size": "80mm",
@@ -22970,6 +23253,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Vyrkos Retainer",
               "Vyrkos Retainer"
             ],
             "regiment_options": [
@@ -23002,6 +23286,7 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Deathrattle Overseer",
               "Deathrattle Overseer"
             ],
             "regiment_options": [
@@ -23034,6 +23319,7 @@
             "base_size": "80mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Deathrattle Overseer",
               "Deathrattle Overseer"
             ],
             "regiment_options": [
@@ -23076,6 +23362,7 @@
             "base_size": "80mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Deathrattle Overseer",
               "Deathrattle Overseer"
             ],
             "regiment_options": [
@@ -23333,7 +23620,7 @@
           {
             "name": "Revenant Draconith",
             "unit_size": "1",
-            "points": 240,
+            "points": 260,
             "keywords": [
               "Monster"
             ],
@@ -23352,7 +23639,7 @@
           {
             "name": "Terrorgheist",
             "unit_size": "1",
-            "points": 220,
+            "points": 240,
             "keywords": [
               "Monster"
             ],
@@ -24941,7 +25228,7 @@
             "hero": false
           },
           {
-            "name": " Borgit's Beastgrabbaz",
+            "name": "Borgit's Beastgrabbaz",
             "unit_size": "5",
             "points": 90,
             "keywords": [
@@ -25146,6 +25433,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Headstompa",
               "Headstompa"
             ],
             "regiment_options": [
@@ -25170,7 +25458,7 @@
           {
             "name": "Gordrakk, the Fist of Gork",
             "unit_size": "1",
-            "points": 360,
+            "points": 380,
             "keywords": [],
             "notes": [],
             "base_size": "160mm",
@@ -25266,7 +25554,7 @@
           {
             "name": "Megaboss",
             "unit_size": "1",
-            "points": 170,
+            "points": 190,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Headstompa"
@@ -25274,6 +25562,7 @@
             "base_size": "60mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Headstompa",
               "Headstompa"
             ],
             "regiment_options": [
@@ -25308,7 +25597,7 @@
           {
             "name": "Megaboss on Maw-krusha",
             "unit_size": "1",
-            "points": 340,
+            "points": 360,
             "keywords": [],
             "notes": [],
             "base_size": "160mm",
@@ -25356,7 +25645,7 @@
           {
             "name": "Tuskboss on Maw-grunta",
             "unit_size": "1",
-            "points": 240,
+            "points": 260,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Tusk Wrangler"
@@ -25364,24 +25653,35 @@
             "base_size": "120 x 92mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Tusk Wrangler",
               "Tusk Wrangler"
             ],
             "regiment_options": [
               {
                 "min": 0,
-                "max": 1,
+                "max": -1,
                 "keywords": [],
                 "nonKeywords": [],
-                "subhero_categories": [
-                  "Headstompa"
-                ],
-                "unit_names": []
+                "subhero_categories": [],
+                "unit_names": [
+                  "Maw-grunta Gougers"
+                ]
+              },
+              {
+                "min": 0,
+                "max": -1,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": [
+                  "Maw-grunta with Hakkin' Krew"
+                ]
               },
               {
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Ironjawz"
+                  "Cavalry"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -25426,7 +25726,7 @@
           {
             "name": "Weirdnob Shaman",
             "unit_size": "1",
-            "points": 120,
+            "points": 130,
             "keywords": [],
             "notes": [],
             "base_size": "40mm",
@@ -25454,7 +25754,7 @@
           {
             "name": "Zoggrok Anvilsmasha",
             "unit_size": "1",
-            "points": 170,
+            "points": 180,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Headstompa"
@@ -25462,6 +25762,7 @@
             "base_size": "50mm [1], 25mm [1]",
             "reinforceable": false,
             "subhero_categories": [
+              "Headstompa",
               "Headstompa"
             ],
             "regiment_options": [
@@ -25562,7 +25863,7 @@
           {
             "name": "Maw-grunta Gougers",
             "unit_size": "1",
-            "points": 190,
+            "points": 210,
             "keywords": [
               "Monster"
             ],
@@ -25826,7 +26127,7 @@
           {
             "name": "Breaka-boss on Mirebrute Troggoth",
             "unit_size": "1",
-            "points": 200,
+            "points": 220,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Swamp Beast"
@@ -25834,6 +26135,7 @@
             "base_size": "80mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Swamp Beast",
               "Swamp Beast"
             ],
             "regiment_options": [
@@ -25868,7 +26170,7 @@
           {
             "name": "Gobsprakk, the Mouth of Mork",
             "unit_size": "1",
-            "points": 310,
+            "points": 330,
             "keywords": [],
             "notes": [],
             "base_size": "130mm",
@@ -25916,7 +26218,7 @@
           {
             "name": "Hobgrot Slittaboss",
             "unit_size": "1",
-            "points": 70,
+            "points": 80,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Mob Wrangler"
@@ -25924,12 +26226,13 @@
             "base_size": "32mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Mob Wrangler",
               "Mob Wrangler"
             ],
             "regiment_options": [
               {
                 "min": 0,
-                "max": -1,
+                "max": 1,
                 "keywords": [
                   "Infantry"
                 ],
@@ -25956,6 +26259,16 @@
                 "nonKeywords": [],
                 "subhero_categories": [],
                 "unit_names": []
+              },
+              {
+                "min": 0,
+                "max": -1,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": [
+                  "Hobgrot Slittaz"
+                ]
               }
             ],
             "requiredLeader": "",
@@ -25968,7 +26281,7 @@
           {
             "name": "Killaboss on Corpse-rippa Vulcha",
             "unit_size": "1",
-            "points": 260,
+            "points": 290,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Swamp Beast"
@@ -25976,6 +26289,7 @@
             "base_size": "130mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Swamp Beast",
               "Swamp Beast"
             ],
             "regiment_options": [
@@ -26010,7 +26324,7 @@
           {
             "name": "Killaboss on Great Gnashtoof",
             "unit_size": "1",
-            "points": 150,
+            "points": 170,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Swamp Beast"
@@ -26018,6 +26332,7 @@
             "base_size": "105 x 70mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Swamp Beast",
               "Swamp Beast"
             ],
             "regiment_options": [
@@ -26052,7 +26367,7 @@
           {
             "name": "Killaboss with Stab-grot",
             "unit_size": "1",
-            "points": 80,
+            "points": 100,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Mob Wrangler"
@@ -26060,6 +26375,7 @@
             "base_size": "40mm [1], 25mm [1]",
             "reinforceable": false,
             "subhero_categories": [
+              "Mob Wrangler",
               "Mob Wrangler"
             ],
             "regiment_options": [
@@ -26132,7 +26448,7 @@
           {
             "name": "Murknob with Belcha-banna",
             "unit_size": "1",
-            "points": 80,
+            "points": 100,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Mob Wrangler"
@@ -26140,6 +26456,7 @@
             "base_size": "40mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Mob Wrangler",
               "Mob Wrangler"
             ],
             "regiment_options": [
@@ -26164,7 +26481,7 @@
           {
             "name": "Snatchaboss on Sludgeraker Beast",
             "unit_size": "1",
-            "points": 220,
+            "points": 240,
             "keywords": [],
             "notes": [
               "This Hero can join an eligible regiment as a Swamp Beast"
@@ -26172,6 +26489,7 @@
             "base_size": "120 x 92mm",
             "reinforceable": false,
             "subhero_categories": [
+              "Swamp Beast",
               "Swamp Beast"
             ],
             "regiment_options": [
@@ -26225,16 +26543,6 @@
               },
               {
                 "min": 0,
-                "max": 1,
-                "keywords": [],
-                "nonKeywords": [],
-                "subhero_categories": [
-                  "Swamp Beast"
-                ],
-                "unit_names": []
-              },
-              {
-                "min": 0,
                 "max": -1,
                 "keywords": [
                   "Kruleboyz"
@@ -26254,7 +26562,7 @@
           {
             "name": "Swampcalla Shaman with Pot-grot",
             "unit_size": "1",
-            "points": 110,
+            "points": 120,
             "keywords": [],
             "notes": [],
             "base_size": "40mm [1], 25mm [1]",
@@ -26265,7 +26573,7 @@
                 "min": 0,
                 "max": -1,
                 "keywords": [
-                  "Kruleboyz"
+                  "Infantry"
                 ],
                 "nonKeywords": [],
                 "subhero_categories": [],
@@ -26375,7 +26683,7 @@
           {
             "name": "Beast-skewer Killbow",
             "unit_size": "1",
-            "points": 140,
+            "points": 160,
             "keywords": [
               "War Machine"
             ],
@@ -26413,7 +26721,7 @@
           {
             "name": "Hobgrot Slittaz",
             "unit_size": "10",
-            "points": 80,
+            "points": 90,
             "keywords": [
               "Infantry"
             ],
@@ -26432,7 +26740,7 @@
           {
             "name": "Kruleboyz Monsta-killaz",
             "unit_size": "7",
-            "points": 110,
+            "points": 120,
             "keywords": [
               "Infantry"
             ],
@@ -26453,7 +26761,7 @@
           {
             "name": "Man-skewer Boltboyz",
             "unit_size": "3",
-            "points": 90,
+            "points": 110,
             "keywords": [
               "Infantry"
             ],
@@ -26472,7 +26780,7 @@
           {
             "name": "Marshcrawla Sloggoth",
             "unit_size": "1",
-            "points": 130,
+            "points": 150,
             "keywords": [
               "War Machine"
             ],
@@ -27369,7 +27677,16 @@
             "base_size": "50mm [1], 25mm [4]",
             "reinforceable": false,
             "subhero_categories": [],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "",
             "undersizeCondition": "",
             "retiringOn": "",
@@ -27386,7 +27703,16 @@
             "base_size": "40mm [1], 50 x 25mm [1], 25mm [3]",
             "reinforceable": false,
             "subhero_categories": [],
-            "regiment_options": [],
+            "regiment_options": [
+              {
+                "min": 0,
+                "max": 0,
+                "keywords": [],
+                "nonKeywords": [],
+                "subhero_categories": [],
+                "unit_names": []
+              }
+            ],
             "requiredLeader": "",
             "undersizeCondition": "",
             "retiringOn": "",

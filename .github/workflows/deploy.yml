@@ -1,6 +1,8 @@
 name: Build and Deploy PDF Data Site
 
 on:
+  schedule:
+    - cron: '0 16 * * 3' # Every Wednesday at 10am Central Time (UTC-6)
   push:
     branches:
       - main
@@ -12,6 +14,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run main.py to generate data
+        run: python main.py --output-dir=dist/data
 
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

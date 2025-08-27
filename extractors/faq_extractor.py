@@ -71,7 +71,7 @@ class FAQExtractor:
         self.finalize_question()
         self.finalize_rule()  # Finalize any previous rule
         self.finalize_section()  # Finalize any previous section
-        print(f"Starting section: {title}")
+        # print(f"Starting section: {title}")
         self.section_title = title
         self.rules = []
         self.rule_title = None
@@ -80,12 +80,14 @@ class FAQExtractor:
 
     def finalize_section(self):
         if self.section_title or self.rules or self.section_questions:
-            print(f"Finalizing section: {self.section_title}")
+            # print(f"Finalizing section: {self.section_title}")
             self.sections.append({
                 "title": self.section_title or "Unknown Section",
                 "questions": self.section_questions,
                 "rules": self.rules
             })
+
+            print(f"Finalized section: {self.section_title} with {len(self.section_questions)} questions and {len(self.rules)} rules.")
             self.section_title = None
             self.rules = []
             self.rule_title = None
@@ -120,11 +122,11 @@ class FAQExtractor:
         """Finalize the current rule and add it to the list."""
         self.finalize_question()
         if self.questions and (not self.rule_title or self.rule_title in ["Unknown Rule", "NEW", "UPDATED"]):
-            print(f"Finalizing questions for section: {self.section_title}")
+            # print(f"Finalizing questions for section: {self.section_title}")
             self.rule_title = title
             self.section_questions = self.questions
         if self.questions and self.rule_title:
-            print(f"Finalizing rule: {self.rule_title}")
+            # print(f"Finalizing rule: {self.rule_title}")
             self.rules.append({
                 "title": self.rule_title,
                 "questions": self.questions
@@ -134,7 +136,7 @@ class FAQExtractor:
 
     def start_question(self, first_line):
         """Start a new question."""
-        print(f"Starting question: {first_line}")
+        # print(f"Starting question: {first_line}")
         self.collecting_question = True
         self.question_lines = [re.sub(r"^Q[:.]\s*", "", first_line)]
 
@@ -142,7 +144,7 @@ class FAQExtractor:
         """Start a new answer."""
         if self.collecting_answer:
             assert False, f"Answer already collecting when found: {first_line}, Q: {self.question_lines}, A: {self.answer_lines}"
-        print(f"Starting answer: {first_line}")
+        # print(f"Starting answer: {first_line}")
         self.collecting_answer = True
         self.answer_lines = [re.sub(r"^A[:.]\s*", "", first_line)]
 
@@ -153,14 +155,14 @@ class FAQExtractor:
             answer_text = normalize_text(" ".join(self.answer_lines).strip())
             if question_text and answer_text:
                 if self.rule_title:
-                    print(f"Finalizing question: {question_text} with answer: {answer_text}")
+                    # print(f"Finalizing question: {question_text} with answer: {answer_text}")
                     self.questions.append({
                         "question": question_text,
                         "answer": answer_text,
                         "updatedOn": datetime.now().strftime("%Y-%m-%d")
                     })
                 else:
-                    print(f"Finalizing question without rule title: {question_text} with answer: {answer_text}")
+                    # print(f"Finalizing question without rule title: {question_text} with answer: {answer_text}")
                     self.section_questions.append({
                         "question": question_text,
                         "answer": answer_text,
