@@ -11,6 +11,8 @@ output
 output/*
 
 downloads/
+downloads
+downloads/*
 
 # Ignore logs
 *.log

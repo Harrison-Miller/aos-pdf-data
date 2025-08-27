@@ -99,3 +99,6 @@ def download_pdfs(download_dir):
         errors.append("No faction battle profiles PDFs found")
     if errors:
         raise RuntimeError("Required downloads missing: " + ", ".join(errors))
+
+if __name__ == "__main__":
+    download_pdfs("downloads")

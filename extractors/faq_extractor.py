@@ -39,7 +39,6 @@ class FAQExtractor:
                 if rule_title:
                     self.all_rule_titles.add(rule_title)
 
-
         # Process FAQ Lines
         for i, line in enumerate(faq_lines):
             # If a rule any rule title from self.all_rule_titles is found, finalize the previous question
@@ -159,14 +158,14 @@ class FAQExtractor:
                     self.questions.append({
                         "question": question_text,
                         "answer": answer_text,
-                        "updatedOn": datetime.now().strftime("%Y-%m-%d")
+                        # "updatedOn": datetime.now().strftime("%Y-%m-%d")
                     })
                 else:
                     # print(f"Finalizing question without rule title: {question_text} with answer: {answer_text}")
                     self.section_questions.append({
                         "question": question_text,
                         "answer": answer_text,
-                        "updatedOn": datetime.now().strftime("%Y-%m-%d")
+                        # "updatedOn": datetime.now().strftime("%Y-%m-%d")
                     })
         self.collecting_question = False
         self.question_lines = []
@@ -197,42 +196,57 @@ class FAQExtractor:
 
 
 def extract_text_from_columns(page):
-    """Extract text from a two-column layout using images as boundaries."""
+    """Extract text from a two-column layout using vertical lines as boundaries."""
     words = page.extract_words()
-    images = page.images
+    lines = page.lines
     outside_text = []
     column_text = []
+    page_width = page.width
+    page_height = page.height
 
-    # Find valid images (by area) that contain at least one Q&A pair
-    valid_images = []
-
-    for image in images:
+    # Find vertical lines and construct bounding boxes
+    vertical_lines = [line for line in lines if abs(line["x1"] - line["x0"]) < 5 and abs(line["y1"] - line["y0"]) > 50]
+    valid_boxes = []
+    buffer = 10  # pixels to add above/below line
+    for index, vline in enumerate(vertical_lines):
+        top = vline["top"] - buffer
+        bottom = vline["bottom"] + buffer
+        bbox = (0, top, page_width, bottom)
         try:
-            # Try cropping the image region using page.crop
-            try:
-                cropped_page = page.crop((image["x0"], image["top"], image["x1"], image["bottom"]))
-                cropped_words = cropped_page.extract_words()
-                image_text = " ".join(word["text"] for word in cropped_words)
-                # Check for Q&A pattern
-                if contains_faq(image_text):
-                    area = (image["x1"] - image["x0"]) * (image["bottom"] - image["top"])
-                    valid_images.append((area, image))
-            except Exception:
-                continue
+            cropped_page = page.crop(bbox)
+            cropped_words = cropped_page.extract_words()
+            image_text = " ".join(word["text"] for word in cropped_words)
+            if contains_faq(image_text):
+                area = (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])
+                valid_boxes.append((area, bbox, cropped_words))
+            #     im = page.to_image()
+            #     im.draw_rects([{"x0": bbox[0], "top": bbox[1], "x1": bbox[2], "bottom": bbox[3]}])
+            #     im.draw_rects(cropped_words)
+            #     im.draw_lines([vline])
+            #     im.save(f"debug_cropped_line_{index}.png")
+            # else:
+            #     im = page.to_image()
+            #     im.draw_rects([{"x0": bbox[0], "top": bbox[1], "x1": bbox[2], "bottom": bbox[3]}])
+            #     im.draw_rects(cropped_words)
+            #     im.draw_lines([vline])
+            #     im.save(f"debug_invalid_line_{index}.png")
         except Exception:
             continue
 
-    if valid_images:
-        # Select the largest valid image by area
-        _, largest_image = max(valid_images, key=lambda x: x[0])
+    if valid_boxes:
+        # Select the largest valid box by area
+        _, largest_bbox, largest_words = max(valid_boxes, key=lambda x: x[0])
         image_bbox = {
-            "top": largest_image["top"],
-            "bottom": largest_image["bottom"],
-            "left": largest_image["x0"],
-            "right": largest_image["x1"]
+            "top": largest_bbox[1],
+            "bottom": largest_bbox[3],
+            "left": largest_bbox[0],
+            "right": largest_bbox[2]
         }
+        # im = page.to_image()
+        # im.draw_rects([{"x0": largest_bbox[0], "top": largest_bbox[1], "x1": largest_bbox[2], "bottom": largest_bbox[3]}])
+        # im.save("debug_largest_line_bbox.png")
     else:
-        # Fallback: use the whole page if no valid images
+        # Fallback: use the whole page if no valid lines
         image_bbox = {"top": 0, "bottom": float("inf"), "left": 0, "right": float("inf")}
 
     # Separate words into outside text and column text
@@ -286,12 +300,12 @@ def contains_faq(text):
         text = " ".join(text)
     return bool(re.search(r"Q:.*A:.*", text, re.DOTALL))
 
-def extract_faq_data(pdf):
+def extract_faq_data(pdf_pages):
     """Extract FAQ data from a PDF with two-column layout."""
     extractor = FAQExtractor()
 
     try:
-        for page in pdf.pages:
+        for page in pdf_pages:
             extractor.process_page(page)
     except Exception as e:
         print(f"Unexpected error during extraction: {e}")

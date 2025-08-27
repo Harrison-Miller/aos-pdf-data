@@ -8,14 +8,14 @@ from metadata import create_metadata
 
 OVERLAY_DIR = "overlays"
 
-def extract_and_save(download_dir, output_dir):
+def extract_and_save(download_dir, output_dir, faq=True, bps=True):
     # Load rules_update.pdf and run extract_faq_data
     rules_update_path = os.path.join(download_dir, "rules_update.pdf")
-    if os.path.exists(rules_update_path):
+    if os.path.exists(rules_update_path) and faq:
         print(f"Processing FAQ from {rules_update_path}...")
         pdf_metadata = create_metadata(rules_update_path)
         with pdfplumber.open(rules_update_path) as pdf:
-            faq_data = extract_faq_data(pdf)
+            faq_data = extract_faq_data(pdf.pages)
         # Save FAQ output
         os.makedirs(output_dir, exist_ok=True)
         with open(os.path.join(output_dir, "faq.json"), "w") as f:
@@ -29,12 +29,13 @@ def extract_and_save(download_dir, output_dir):
     #     json.dump(rules_data, f, indent=2)
 
     # For battle profiles, pass the downloads dir to extract_battle_profile_data
-    print(f"Processing battle profiles from {download_dir}...")
-    battle_profile_data = extract_battle_profile_data(download_dir)
-    battle_profiles_data = merge_overlays(OVERLAY_DIR, battle_profile_data)
+    if bps:
+        print(f"Processing battle profiles from {download_dir}...")
+        battle_profile_data = extract_battle_profile_data(download_dir)
+        battle_profiles_data = merge_overlays(OVERLAY_DIR, battle_profile_data)
 
-    with open(os.path.join(output_dir, "battleprofile.json"), "w") as f:
-        json.dump({"type": "battleprofile", "data": battle_profile_data}, f, indent=2)
+        with open(os.path.join(output_dir, "battleprofile.json"), "w") as f:
+            json.dump({"type": "battleprofile", "data": battle_profile_data}, f, indent=2)
 
 def merge_overlays(overlays_dir, data):
     print("MERGING OVERLAYS")
@@ -83,3 +84,22 @@ if __name__ == "__main__":
     DOWNLOAD_DIR = "downloads"
     OUTPUT_DIR = "output"
     extract_and_save(DOWNLOAD_DIR, OUTPUT_DIR)
+
+    # download_dir = "downloads"
+    # output_dir = "output"
+    # rules_update_path = os.path.join(download_dir, "rules_update.pdf")
+    # if os.path.exists(rules_update_path):
+    #     print(f"Processing FAQ from {rules_update_path}...")
+    #     pdf_metadata = create_metadata(rules_update_path)
+    #     with pdfplumber.open(rules_update_path) as pdf:
+    #         # page = pdf.pages[3]
+    #         # im = page.to_image()
+    #         # im.draw_rects(page.images)
+    #         # im.save("debug.png")
+    #         faq_data = extract_faq_data([pdf.pages[4]])
+    #     # Save FAQ output
+    #     os.makedirs(output_dir, exist_ok=True)
+    #     with open(os.path.join(output_dir, "faq.json"), "w") as f:
+    #         json.dump({**pdf_metadata, "type": "faq", "data": faq_data}, f, indent=2)
+    # else:
+    #     print("rules_update.pdf not found in downloads directory.")
