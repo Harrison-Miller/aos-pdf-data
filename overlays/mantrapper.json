@@ -1,0 +1,41 @@
+{
+    "factions": [
+        {
+            "name": "OGOR MAWTRIBES",
+            "battle_profiles": [
+                {
+                    "name": "Mantrapper",
+                    "unit_size": "1",
+                    "points": 130,
+                    "keywords": [],
+                    "notes": [
+                        "This HERO can join an eligible regiment as a Voice of the Everwinter"
+                    ],
+                    "base_size": "40mm [1] 50 x 25mm [1], 25mm [3]",
+                    "reinforceable": false,
+                    "subhero_categories": [
+                        "Voice of the Everwinter"
+                    ],
+                    "regiment_options": [
+                        {
+                            "min": 0,
+                            "max": -1,
+                            "keywords": [
+                            "Beastclaw Raiders"
+                            ],
+                            "nonKeywords": [],
+                            "subhero_categories": [],
+                            "unit_names": []
+                        }
+                    ],
+                    "requiredLeader": "",
+                    "undersizeCondition": "",
+                    "retiringOn": "",
+                    "exclusiveWith": "",
+                    "legends": false,
+                    "hero": true
+                }
+            ]
+        }
+    ]
+}
