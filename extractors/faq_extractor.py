@@ -184,6 +184,13 @@ class FAQExtractor:
         #     })
         self.finalize_section()
 
+        # remove any rules that start with DELETED
+        for section in self.sections:
+            section["rules"] = [rule for rule in section["rules"] if not rule["title"].startswith("DELETED")]
+            # for rule in section["rules"]:
+            #     if rule["title"].startswith("DELETED"):
+            #         print(f"Removing deleted rule: {rule['title']} from section: {section['title']}")
+
     def extract_from_page(self, lines):
         """Process all lines from a single page."""
         for i, line in enumerate(lines):
