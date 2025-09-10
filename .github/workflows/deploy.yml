@@ -37,14 +37,11 @@ jobs:
           log-level: standard
 
       - name: Sync dist to DigitalOcean Spaces
-        uses: jakejarvis/s3-sync-action@master
+        uses: BetaHuhn/do-spaces-action@v2
         with:
-          args: --acl public-read --delete
-        env:
-          AWS_S3_BUCKET: ${{ secrets.DO_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.DO_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.DO_SECRET_ACCESS_KEY }}
-          AWS_REGION: "us-east-1"
-          SOURCE_DIR: "dist"
-          DEST_DIR: "aos-pdf-data"
-          S3_ENDPOINT: "https://nyc3.digitaloceanspaces.com"
+          access_key: ${{ secrets.DO_ACCESS_KEY_ID }}
+          secret_key: ${{ secrets.DO_SECRET_ACCESS_KEY }}
+          space_name: ${{ secrets.DO_BUCKET }}
+          space_region: nyc3
+          source: dist
+          out_dir: aos-pdf-data
