@@ -111,9 +111,33 @@ class BPExtractor:
             "factions": [faction.to_dict() for faction in self.factions.values()],
         }
 
+def is_strikethrough(word, lines):
+    """Detects if a word is striked through by checking if any horizontal line intersects the word's bounding box."""
+    x0, top, x1, bottom = word["x0"], word["y0"], word["x1"], word["y1"]
+    # Get all horizontal lines on the page
+    for line in lines:
+        lx0, ly0, lx1, ly1 = line["x0"], line["y0"], line["x1"], line["y1"]
+        # Check if line is horizontal (y0 == y1 or very close)
+        if abs(ly0 - ly1) <= 1:
+            # Check if line horizontally crosses the word's bbox
+            if (lx0 <= x1 and lx1 >= x0) and (ly0 >= top and ly0 <= bottom):
+                return True
+    return False
+
 def extract_bp_tables(page):
     """Extracts lines of text outside tables and tables from a PDF page."""
-    page = page.filter(lambda obj: obj.get("text") != " ")
+    # Remove strikethrough text from the page before extracting tables
+    lines = page.lines
+    def not_strikethrough(obj):
+        if obj.get("text") == " ":
+            return False
+        # Only check for strikethrough if obj has text and bbox
+        if "text" in obj and obj["text"] and all(k in obj for k in ["x0", "top", "x1", "bottom"]):
+            if is_strikethrough(obj, lines):
+                print(f"[DEBUG] Removed strikethrough text before table extraction: '{obj['text']}' at ({obj['x0']},{obj['top']},{obj['x1']},{obj['bottom']})")
+                return False
+        return True
+    page = page.filter(not_strikethrough)
     tables = page.extract_tables(table_settings={"text_x_tolerance": 1})
 
     # Get all table bbox regions
@@ -134,7 +158,10 @@ def extract_bp_tables(page):
                 return False
         return True
 
-    outside_words = [w for w in words if is_outside_tables(w)]
+    outside_words = []
+    for w in words:
+        if is_outside_tables(w):
+            outside_words.append(w)
 
     # Group words into lines based on their 'top' coordinate
     lines = []
