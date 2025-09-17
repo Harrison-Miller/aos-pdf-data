@@ -8,6 +8,7 @@ from extractors.bp_table import determine_table_type
 import pdfplumber
 import glob
 import os
+from datetime import datetime
 
 class BPExtractor:
     def __init__(self):
@@ -63,7 +64,6 @@ class BPExtractor:
                 "points": points
             })
         self.regiments_of_renown.extend(profiles)
-
     def process_universal_manifestations(self, table):
         """Process a table of universal manifestations."""
         print(f"Processing universal manifestations table")
@@ -159,21 +159,45 @@ def extract_battle_profile_data(pdf_dir):
     extractor = BPExtractor()
     # Process battle_profiles.pdf
     battle_profiles_path = os.path.join(pdf_dir, "battle_profiles.pdf")
+    main_bp_date = None
     if os.path.exists(battle_profiles_path):
         print(f"PROCESSING BATTLE PROFILES: {battle_profiles_path}")
         print("==================================")
         with pdfplumber.open(battle_profiles_path) as pdf:
+            main_bp_date = get_published_month_year(pdf)
             for page in pdf.pages:
                 extractor.process_page(page)
     else:
         print(f"Warning: {battle_profiles_path} not found.")
+
+
+
     # Process all faction PDFs
+    print(f"Main battle profiles published date: {main_bp_date}")
     faction_pattern = os.path.join(pdf_dir, "faction_*_battle_profiles.pdf")
     for faction_pdf in glob.glob(faction_pattern):
-        print(f"PROCESSING FACTION: {faction_pdf}")
-        print("==================================")
         with pdfplumber.open(faction_pdf) as pdf:
+            faction_bp_date = get_published_month_year(pdf)
+            print(f"Faction battle profiles {faction_pdf} published date: {faction_bp_date}")
+            # if faction_bp_date newer the main_bp_date process otherwise skip
+            if main_bp_date and faction_bp_date and faction_bp_date < main_bp_date:
+                print(f"Skipping {faction_pdf} as it is not newer than main battle profiles.")
+                continue
+
+            print(f"PROCESSING FACTION: {faction_pdf}")
+            print("==================================")
             for page in pdf.pages:
                 extractor.process_page(page)
     extractor.finalize()
     return extractor.get_battle_profiles()
+
+def get_published_month_year(pdf):
+    # check first page for a month and year pattern like "January 2024"
+    first_page = pdf.pages[0]
+    text = first_page.extract_text()
+    match = re.search(r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})", text, re.IGNORECASE)
+    if match:
+        month, year = match.groups()
+        # return comparable date object
+        return datetime.strptime(f"{month} {year}", "%B %Y")
+    return None
